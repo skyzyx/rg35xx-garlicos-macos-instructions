@@ -95,7 +95,7 @@ Each step is explained in English with the corresponding terminal command below 
     brew install --cask gdisk
     ```
 
-1. Use `diskutil` (installed by default on macOS) to view the list of mounted drives and look for the microSD card path. I have _several_ external hard drives, and mine was `/dev/disk11` with had four partitions.
+1. Use `diskutil` (installed by default on macOS) to view the list of mounted drives and look for the microSD card path. I have _several_ external hard drives, and mine was `/dev/disk11` with 4 partitions.
 
     > **NOTE:** If you paid attention to the _Location_ column in _balenaEtcher_ when you were selecting a disk target, this will be the _same location_.
 
