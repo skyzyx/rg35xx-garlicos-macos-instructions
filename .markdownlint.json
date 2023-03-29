@@ -1,0 +1,104 @@
+{
+    "heading-increment": false,
+    "first-header-h1": true,
+    "header-style": {
+        "style": "atx"
+    },
+    "ul-style": {
+        "style": "asterisk"
+    },
+    "list-indent": true,
+    "ul-start-left": true,
+    "ul-indent": {
+        "indent": 4
+    },
+    "no-trailing-spaces": {
+        "br_spaces": 2,
+        "list_item_empty_lines": false
+    },
+    "single-trailing-newline": true,
+    "no-hard-tabs": {
+        "code_blocks": false
+    },
+    "no-reversed-links": true,
+    "no-multiple-blanks": {
+        "maximum": 1
+    },
+    "line-length": {
+        "line_length": 10000,
+        "code_blocks": false,
+        "tables": false
+    },
+    "commands-show-output": false,
+    "no-missing-space-atx": true,
+    "no-multiple-space-atx": true,
+    "blanks-around-headers": {
+        "lines_above": 1,
+        "lines_below": 1
+    },
+    "header-start-left": true,
+    "no-duplicate-header": {
+        "allow_different_nesting": true
+    },
+    "single-h1": {
+        "level": 1
+    },
+    "no-trailing-punctuation": {
+        "punctuation": ".,;:"
+    },
+    "no-multiple-space-blockquote": true,
+    "no-blanks-blockquote": true,
+    "ol-prefix": {
+        "style": "one"
+    },
+    "list-marker-space": {
+        "ul_single": 1,
+        "ol_single": 1,
+        "ul_multi": 1,
+        "ol_multi": 1
+    },
+    "blanks-around-fences": {
+        "list_items": true
+    },
+    "blanks-around-lists": true,
+    "no-inline-html": {
+        "allowed_elements": [
+            "a",
+            "b",
+            "br",
+            "code",
+            "details",
+            "div",
+            "img",
+            "li",
+            "nobr",
+            "p",
+            "pre",
+            "summary",
+            "ul"
+        ]
+    },
+    "no-bare-urls": true,
+    "hr-style": {
+        "style": "consistent"
+    },
+    "no-emphasis-as-header": true,
+    "no-space-in-emphasis": false,
+    "no-space-in-code": false,
+    "no-space-in-links": true,
+    "fenced-code-language": true,
+    "code-block-style": {
+        "style": "fenced"
+    },
+    "first-line-h1": false,
+    "no-empty-links": true,
+    "proper-names": {
+        "names": [
+            "Anbernic",
+            "Garlic OS",
+            "macOS",
+            "RG35XX"
+        ],
+        "code_blocks": false
+    }
+}
