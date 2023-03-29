@@ -182,7 +182,7 @@ Each step is explained in English with the corresponding terminal command below 
     Expert command (? for help):
     ```
 
-1. Move backup data structurs to end of disk.
+1. Move backup data structures to end of disk.
 
     ```plain
     e
@@ -270,7 +270,7 @@ Each step is explained in English with the corresponding terminal command below 
     First sector (34-62333918, default = 1189888) or {+-}size{KMGTP}:
     ```
 
-1. When it asks you the first and last sector, press `enter` on both of these to use the default values.
+1. When it asks you the for first and last sector, press `enter` on both of these to use the default values.
 
     ```plain
     enter
@@ -278,6 +278,10 @@ Each step is explained in English with the corresponding terminal command below 
 
     ```plain
     Last sector (1189888-62333918, default = 62332927) or {+-}size{KMGTP}:
+    ```
+
+    ```plain
+    enter
     ```
 
     ```plain
@@ -357,6 +361,10 @@ Each step is explained in English with the corresponding terminal command below 
     1. Select them and drag them to the trash can, or…
 
     1. _Right-click_ with a mouse; _two-finger tap_ on a trackpad; or _control-click_ with the keyboard — and then choose _Eject_ from the menu.
+
+1. Pop your card out, then put it back in so that Finder mounts your new volumes on the desktop.
+
+    > **NOTE:** The size of the `ROMS` volume will still be incorrect until the next step.
 
 ## Cleaning up and restoring backups
 
