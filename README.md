@@ -2,7 +2,7 @@
 
 Instructions for installing Garlic OS on your Anbernic RG35XX using macOS. Adapted and expanded from <https://pastebin.com/YV1Va5JL>, originally written by _A GUEST_ on 2022-12-30. (I wish there were a better way to cite your work — I’m sorry!)
 
-Each step is explained in English with the corresponding terminal command below it. These instructions hould work without problem on any modern macOS — with either Intel or Apple Silicon CPUs. Tested on macOS Ventura 13.3 on both an Intel i9 chip, and an Apple M1 Max chip.
+Each step is explained in English with the corresponding terminal command below it. These instructions should work without problem on any modern macOS — with either Intel or Apple Silicon CPUs. Tested on macOS Ventura 13.3 on both an Intel i9 chip, and an Apple M1 Max chip.
 
 > **IMPORTANT:** You will end up formatting the `ROMS` partition completely, so it is best to do this before you waste time copying any rom files over.
 
