@@ -1,0 +1,72 @@
+# Helps Git use the right algorithms for diffs
+# https://git-scm.com/docs/gitattributes
+
+# Auto detect text files and perform LF normalization
+# https://www.davidlaing.com/2012/09/19/customise-your-gitattributes-to-become-a-git-ninja/
+*          text=auto
+
+# Front-end
+*.css      text eol=lf diff=css
+*.htm      text eol=lf diff=html
+*.html     text eol=lf diff=html
+*.js       text eol=lf
+*.less     text eol=lf diff=css
+*.sass     text eol=lf diff=css
+*.scss     text eol=lf diff=css
+*.ts       text eol=lf
+*.xhtml    text eol=lf diff=html
+
+# Documents
+*.dot      diff=astextplain
+*.DOT      diff=astextplain
+*.markdown text eol=lf diff=markdown
+*.md       text eol=lf diff=markdown
+*.mdown    text eol=lf diff=markdown
+*.mdtext   text eol=lf diff=markdown
+*.mdtxt    text eol=lf diff=markdown
+*.mdwn     text eol=lf diff=markdown
+*.mkd      text eol=lf diff=markdown
+*.mkdn     text eol=lf diff=markdown
+*.pdf      diff=astextplain
+*.PDF      diff=astextplain
+*.txt      text eol=lf
+
+# "Files"
+*README*   text eol=lf
+
+# Graphics
+*.png      binary
+*.jpg      binary
+*.jpeg     binary
+*.gif      binary
+*.tif      binary
+*.tiff     binary
+*.ico      binary
+*.eps      binary
+*.svg      text eol=lf
+*.svgz     binary
+*.webp     binary
+
+# Serialization
+*.ini      text eol=lf
+*.json     text eol=lf
+*.toml     text eol=lf
+*.xml      text eol=lf
+*.yaml     text eol=lf
+*.yml      text eol=lf
+
+# Configs
+.editorconfig     text eol=lf
+.env              text eol=lf
+.gitattributes    text eol=lf
+.gitconfig        text eol=lf
+*.lock            text eol=lf -diff
+package-lock.json text eol=lf -diff
+
+# Exclude files from exporting
+.gitattributes export-ignore
+.gitignore     export-ignore
+.gitkeep       export-ignore
+
+# Ignore files (like .npmignore or .gitignore)
+*.*ignore  text eol=lf
