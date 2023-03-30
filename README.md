@@ -1,4 +1,4 @@
-# Installing Garlic OS on your Anbernic RG35XX using macOS
+# Installing Garlic OS on your Anbernic RG35XX using macOS (single-card setup)
 
 Instructions for installing Garlic OS on your Anbernic RG35XX using macOS. Adapted and expanded from <https://pastebin.com/YV1Va5JL>, originally written by _A GUEST_ on 2022-12-30. (I wish there were a better way to cite your work — I’m sorry!)
 
