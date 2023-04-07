@@ -8,6 +8,7 @@ Default translations are in _U.S. English_.
 
 * [Installing Garlic OS on your Anbernic RG35XX using macOS (single-card setup)](docs/installing-garlicos-single-card.en_us.md)
 * Installing Garlic OS on your Anbernic RG35XX using macOS (multi-card setup) [Coming soon]
+* [Updating Garlic OS on your Anbernic RG35XX using macOS](docs/updating-garlicos.en_us.md)
 * Finding and adding the correct BIOS files to Garlic OS on the Anbernic RG35XX so that you can play ROMs [Coming soon]
 * Configuring Garlic OS and Retroarch on the Anbernic RG35XX for optimal use [Coming soon]
 * Configuring new _consoles_ under the Console menu in Garlic OS for the Anbernic RG35XX [Coming soon]
