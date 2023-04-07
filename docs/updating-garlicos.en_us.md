@@ -61,6 +61,8 @@ With your microSD card(s) in your computer, we’ll have a `MISC` volume, a `ROM
 
     1. Finder will ask if you want to replace the folders that are there. Choose _Replace_.
 
+        <div><img src="images/dialog-replace-roms@2x.png" alt="Screenshot of replace dialog" width="444"></div>
+
 1. Doing `MISC` second, open the Finder window for `RG35XX-CopyPasteOnTopOfStock.7z/misc/`. Inside you’ll see several files, and we will copy all of them over. **But wait!**
 
     1. Copying the files straight over to your microSD card will complain that there isn’t enough space. Instead:
@@ -73,6 +75,8 @@ With your microSD card(s) in your computer, we’ll have a `MISC` volume, a `ROM
 
     1. Finder will ask if you want to replace the folders that are there. Choose _Replace_.
 
+        <div><img src="images/dialog-replace-misc@2x.png" alt="Screenshot of replace dialog" width="444"></div>
+
 1. (Optional) If you had a custom boot logo, copy `boot_logo.bmp.gz` from your backup to the root of the `MISC` microSD card volume.
 
 1. (Optional) If you had a custom skin/theme, copy `CFW/skin/` from your backup to the `CFW/skin/` directory on your `ROMS` microSD card volume.
@@ -80,5 +84,7 @@ With your microSD card(s) in your computer, we’ll have a `MISC` volume, a `ROM
 ## Congratulations!
 
 You have updated Garlic OS on your Anbernic RG35XX!
+
+Put the microSD card back into the top slot, and power-on the device.
 
 For more fun, check out [custom themes/skins](https://www.rg35xx.com/temas-garlicos/), as well as [creating a custom boot screen](https://www.reddit.com/r/RG35XX/comments/1177ibw/what_am_i_missing_for_creating_custom_boot_logos/)!
