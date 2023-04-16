@@ -28,5 +28,3 @@ Just to keep things sensible and maintainable, a few ground rules.
     | `zh_hk` | Chinese, Hong Kong      |
 
 1. File extension is `.md`. The final filename would look like `installing-garlicos-single-card.es_mx.md` for the _Mexican Spanish_ translation of _Installing Garlic OS on your Anbernic RG35XX using macOS (single-card setup)_.
-
-1. Translations must be licensed under the terms of the [Creative Commons Zero: 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) license.
