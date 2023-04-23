@@ -10,6 +10,11 @@ Each step is explained in English with the corresponding terminal command below 
 
     <div><img src="images/finder@2x.png" alt="Finder icon" width="55"></div>
 
+* An application which can open `.7z` archives. I can recommend:
+
+    * [The Unarchiver](https://apps.apple.com/us/app/the-unarchiver/id425424353?mt=12) (free)
+    * [Archiver](https://archiverapp.com) (paid)
+
 ## Backing-up the existing OS
 
 If you followed one of the _Installing Garlic OS on your Anbernic RG35XX using macOS_ guides to do an initial installation of Garlic OS, you’ll remember that we had a volume called `MISC` and another called `ROMS`.
