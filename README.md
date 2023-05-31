@@ -12,8 +12,11 @@ Default translations are in _U.S. English_.
 * Finding and adding the correct BIOS files to Garlic OS on the Anbernic RG35XX so that you can play ROMs [Coming soon]
 * Configuring Garlic OS and Retroarch on the Anbernic RG35XX for optimal use [Coming soon]
 * Configuring new _consoles_ under the Console menu in Garlic OS for the Anbernic RG35XX [Coming soon]
-* Creating a custom bootscreen for Garlic OS for the Anbernic RG35XX [Coming soon]
-* Adding box art for ROMs in Garlic OS for the Anbernic RG35XX [Coming soon]
+* Creating a custom bootscreen for Garlic OS for the Anbernic RG35XX using macOS [Coming soon]
+* Creating/modifying skins (themes) in Garlic OS for the Anbernic RG35XX using macOS [Coming soon]
+* Finding/creating custom box art for ROMs in Garlic OS for the Anbernic RG35XX using macOS [Coming soon]
+* Using Skraper XML definition files to create custom box art in Garlic OS for the Anbernic RG35XX using macOS [Coming soon]
+* Using/sharing/creating pre-defined styles of box art in Garlic OS for the Anbernic RG35XX [Coming soon]
 
 ## Other
 
