@@ -42,8 +42,6 @@ If you followed one of the _Installing Garlic OS on your Anbernic RG35XX using m
 
 1. Decompress the `.7z` files.
 
-    1. macOS can open `.7z` files natively.
-
     1. Select _both_ files.
 
     1. _Right-click_ with a mouse; _two-finger tap_ on a trackpad; or _control-click_ with the keyboard — and then choose _Open_ from the menu.
