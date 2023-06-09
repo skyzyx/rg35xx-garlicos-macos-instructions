@@ -65,10 +65,11 @@ Each step is explained in English with the corresponding terminal command below 
 
 1. In Terminal, move to the directory which _contains_ the directory, which contains your `.chd` files. In other words, move to the _grandparent_ directory of your `.chd` files. In the screenshots above, this is the _Legal ROMs_ directory.
 
-1. From that _grandparent_ directory (e.g., _Legal ROMs_), we will use `gfind` to look inside the _parent_ directory (e.g., _Random Game that is a Legal ROM (USA)_), find all of the `.chd` files inside that directory, then use `gtee` to write to write a new `.m3u` file in the _grandparent_ directory.
+1. From that _grandparent_ directory (e.g., _Legal ROMs_), we will use `gfind` to look inside the _parent_ directory (e.g., _Random Game that is a Legal ROM (USA)_), find all of the `.chd` files inside that directory, use `gsort` to sort them the way humans sort them, then use `gtee` to write to write a new `.m3u` file in the _grandparent_ directory.
 
     ```bash
     gfind "Random Game that is a Legal ROM (USA)" -type f -name "*.chd" \
+        | gsort --ignore-case --human-numeric-sort \
         | gtee "Random Game that is a Legal ROM (USA).m3u"
     ```
 
