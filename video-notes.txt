@@ -1,0 +1,13 @@
+640x480
+libx264
+main profile
+level 3.1
+libvorbis
+mkv
+
+4:2:0 CHROMA FORMAT
+8-BIT DEPTH
+30fps
+14Mbps/14000kbps
+
+Decoded in software, which is slower and uses more battery than hardware decoding.
