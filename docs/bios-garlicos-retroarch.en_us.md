@@ -162,20 +162,25 @@ These systems are deemed _unplayable_ either because emulation is far too slow o
 
 ![Handheld Systems](images/header-handheld.png)
 
-| Game system | Year | Core/Emulator | BIOS filenames | ROM folder name |
-|-------------|------|---------------|----------------|-----------------|
-|             |      |               |                | `GB`            |
-|             |      |               |                | `GBA`           |
-|             |      |               |                | `GBC`           |
-|             |      |               |                | `GG`            |
-|             |      |               |                | `GPSP`          |
-|             |      |               |                | `GW`            |
-|             |      |               |                | `LYNX`          |
-|             |      |               |                | `MEGADUCK`      |
-|             |      |               |                | `NGP`           |
-|             |      |               |                | `POKE`          |
-|             |      |               |                | `SUPERVISION`   |
-|             |      |               |                | `WS`            |
+| Game system                            | Year | Core/Emulator       | BIOS filenames | ROM folder name |
+|----------------------------------------|------|---------------------|----------------|-----------------|
+| Atari Lynx                             | 1989 | [Handy]             | `lynxboot.img` | `LYNX`          |
+| Bandai SwanCrystal 🇯🇵                | 2002 | [Beetle Wonderswan] | _None_         | `WS`            |
+| Bandai WonderSwan 🇯🇵                 | 1999 | [Beetle Wonderswan] | _None_         | `WS`            |
+| Bandai WonderSwan Color 🇯🇵           | 2000 | [Beetle Wonderswan] | _None_         | `WS`            |
+| Cougar Boy 🇧🇷                        | 1993 | [SameDuck]          | _None_         | `MEGADUCK`      |
+| Nintendo Game &amp; Watch              | 1980 | [GW]                | _None_         | `GW`            |
+| Nintendo Game Boy                      | 1989 | [Gambatte]          | `gb_bios.bin`  | `GB`            |
+| Nintendo Game Boy Advance              | 2001 | [gpSP]              | `gba_bios.bin` | `GPSP`          |
+| Nintendo Game Boy Advance              | 2001 | [mGBA]              | `gba_bios.bin` | `GBA`           |
+| Nintendo Game Boy Color                | 1998 | [Gambatte]          | `gbc_bios.bin` | `GBC`           |
+| Nintendo Pokemon Mini                  | 2001 | [PokeMini]          | `bios.min`     | `POKE`          |
+| QuickShot Supervision 🇬🇧             | 1992 | [Potator]           | _None_         | `SUPERVISION`   |
+| Sega Game Gear                         | 1990 | [PicoDrive]         | `bios.gg`      | `GG`            |
+| SNK Neo Geo Pocket                     | 1998 | [Beetle NGP]        | _None_         | `NGP`           |
+| SNK Neo Geo Pocket Color               | 1999 | [Beetle NGP]        | _None_         | `NGP`           |
+| Watara Supervision 🇺🇸 🇯🇵 🇪🇺      | 1992 | [Potator]           | _None_         | `SUPERVISION`   |
+| Welback Holdings Mega Duck WG-108 🇪🇺 | 1993 | [SameDuck]          | _None_         | `MEGADUCK`      |
 
 ## Add-ons and Peripherals
 
@@ -269,3 +274,12 @@ If the game system has a flag next to it, it means that the name/device was only
 [VICE]: https://github.com/libretro/vice-libretro
 [Virtual Jaguar]: https://github.com/libretro/virtualjaguar-libretro
 [X Millennium]: https://github.com/libretro/xmil-libretro
+[Handy]: https://github.com/libretro/libretro-handy
+[Beetle Wonderswan]: https://github.com/libretro/beetle-wswan-libretro
+[GW]: https://github.com/libretro/gw-libretro
+[SameDuck]: https://github.com/libretro/libretro-core-info/blob/master/sameduck_libretro.info
+[Gambatte]: https://github.com/libretro/gambatte-libretro
+[gpSP]: https://github.com/libretro/gpsp
+[PokeMini]: https://github.com/libretro/PokeMini
+[Potator]: https://github.com/libretro/potator
+[Beetle NGP]: https://github.com/libretro/beetle-ngp-libretro
