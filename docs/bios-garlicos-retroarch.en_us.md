@@ -2,15 +2,11 @@
 
 ## BIOS files for the RG35XX
 
+![BIOS files for the RG35XX](images/header-bios.png)
+
 Garlic OS shares certain fundamentals with Onion OS. Namely, these include names of ROM folders, and the BIOS files that are necessary to play games. The canonical guide for Onion OS lives at <https://github.com/OnionUI/Onion/wiki/Emulators>, and it is **extremely good**. However, Garlic OS and Onion OS are not _identical_, and in some cases, they do things slightly differently.
 
 These BIOS files also generally work well with other emulators (like [OpenEmu]), although the focus here is on the RG35XX device.
-
-| Abbr | Meaning                           |
-|------|-----------------------------------|
-| _U_  | North America (U = United States) |
-| _J_  | Japan                             |
-| _E_  | Europe                            |
 
 ### Preparation
 
@@ -21,6 +17,8 @@ If you followed one of the _Installing Garlic OS on your Anbernic RG35XX using m
 1. Inside the `ROMS/BIOS` folder, this is where you will put all of the BIOS files (listed below).
 
 ### Special instructions SNK Neo Geo Systems
+
+<div><img src="images/neogeo-logo@2x.png" alt="Neo-Geo System" width="300"></div>
 
 This applies to **Neo Geo arcade games**, **Neo Geo console games**, **Neo Geo CD games**. Sometimes the Neo Geo emulator looks for BIOS files in the same directory as the game, and sometimes it looks in the `BIOS/` directory.
 
@@ -35,6 +33,8 @@ This applies to **Neo Geo arcade games**, **Neo Geo console games**, **Neo Geo C
 Yes, this means that there will be multiple copies of `neogeo.zip`on your SD card. No, don't create symlinks.
 
 ## Arcade Systems
+
+![Arcade Systems](images/header-arcade.png)
 
 > **NOTE:** While you can certainly do some fiddling if you are a true _arcade aficionado_, for most people we're going to recommend _FinalBurn Neo_ for playing arcade games. It seems to work more consistently than MAME, CPS, or the other options.
 
@@ -86,59 +86,63 @@ Source: <https://docs.libretro.com/library/fbneo/>
 
 ## Consoles and PC Systems
 
-| Game system                                        | Year | Core/Emulator                     | BIOS filenames                                                                                                                                                                                                                 | ROM folder name       |
-|----------------------------------------------------|------|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------|
-| 3DO Interactive Multiplayer¹                       | 1993 | [Opera]                           | `panafz1.bin` or `panafz10.bin` or `panafz10-norsa.bin` or `panafz10e-anvil.bin` or `panafz10e-anvil-norsa.bin` or `panafz1j.bin` or `panafz1j-norsa.bin` or `goldstar.bin` or `sanyotry.bin` or `3do_arcade_saot.bin`         | `PANASONIC` ⚠️         |
-| Amstrad CPC                                        | 1984 | [CrocoDS]                         | _None_                                                                                                                                                                                                                         | `CPC`                 |
-| Atari 800                                          | 1979 | [Atari800]                        | `ATARIOSA.ROM`, `ATARIOSB.ROM`, `ATARIBAS.ROM`                                                                                                                                                                                 | `EIGHTHUNDRED` ⚠️      |
-| Atari 2600                                         | 1977 | [Stella 2014]                     | _None_                                                                                                                                                                                                                         | `ATARI`               |
-| Atari 5200 SuperSystem                             | 1982 | [a5200]                           | `5200.rom`, `ATARIBAS.ROM`                                                                                                                                                                                                     | `FIFTYTWOHUNDRED`     |
-| Atari 7800 ProSystem                               | 1986 | [ProSystem]                       | `7800 BIOS (U).rom`, `7800 BIOS (E).rom`                                                                                                                                                                                       | `SEVENTYEIGHTHUNDRED` |
-| Atari Falcon                                       | 1992 | [Hatari]                          | `tos.img` v4.x                                                                                                                                                                                                                 | `ATARIST` ⚠️           |
-| Atari MEGA STE                                     | 1991 | [Hatari]                          | `tos.img` v1.x, 2.x                                                                                                                                                                                                            | `ATARIST` ⚠️           |
-| Atari ST                                           | 1985 | [Hatari]                          | `tos.img` v1.00, 1.02, 1.04, 2.06                                                                                                                                                                                              | `ATARIST` ⚠️           |
-| Atari TT                                           | 1990 | [Hatari]                          | `tos.img` v3.x                                                                                                                                                                                                                 | `ATARIST` ⚠️           |
-| ColecoVision                                       | 1982 | [blueMSX]                         | `coleco.rom`                                                                                                                                                                                                                   | `COLECO`              |
-| Commodore 64                                       | 1982 | [VICE] x64                        | _None_                                                                                                                                                                                                                         | `COMMODORE`           |
-| Commodore 128                                      | 1985 | [VICE] x128                       | _None_                                                                                                                                                                                                                         | `C128`                |
-| Commodore Amiga                                    | 1985 | [PUAE 2021]                       | `kick33180.A500`, `kick34005.A500`, `kick34005.CDTV`, `kick37175.A500`, `kick37350.A600`, `kick39106.A1200`, `kick39106.A4000`, `kick40060.CD32`, `kick40060.CD32.ext`, `kick40063.A600`, `kick40068.A1200`, `kick40068.A4000` | `AMIGA`               |
-| Commodore Amiga CD32                               | 1993 | [PUAE 2021]                       | `kick33180.A500`, `kick34005.A500`, `kick40068.A1200`                                                                                                                                                                          | `AMIGACD`             |
-| Commodore PET                                      | 1977 | [VICE] xpet                       | _None_                                                                                                                                                                                                                         | `PET`                 |
-| Commodore Plus/4                                   | 1984 | [VICE] xplus4                     | _None_                                                                                                                                                                                                                         | `PLUS4`               |
-| Commodore VIC-20                                   | 1980 | [VICE] xvic                       | _None_                                                                                                                                                                                                                         | `VIC20`               |
-| Fairchild Channel F                                | 1976 | [FreeChaF]                        | `sl31253.bin`, `sl31254.bin`, `sl90025.bin`                                                                                                                                                                                    | `FAIRCHILD`           |
-| GCE Vectrex                                        | 1982 | [vecx]                            | _None_                                                                                                                                                                                                                         | `VECTREX`             |
-| Magnavox Odyssey 2 _(U)_                           | 1978 | [O2EM]                            | `o2rom.bin`                                                                                                                                                                                                                    | `ODYSSEY`             |
-| Mattel Intellivision                               | 1979 | [FreeIntv]                        | `exec.bin`, `grom.bin`                                                                                                                                                                                                         | `INTELLIVISION`       |
-| Microsoft MS-DOS                                   | 1981 | [DOSBox-Pure]                     | _None_                                                                                                                                                                                                                         | `DOS`                 |
-| NEC PC Engine _(J/E)_                              | 1987 | [Beetle PCE Fast]                 | _None_                                                                                                                                                                                                                         | `PCE`                 |
-| NEC PC Engine SuperGrafx _(J)_                     | 1989 | [Beetle SuperGrafx]               | `syscard3.pce`                                                                                                                                                                                                                 | `SGFX`                |
-| NEC PC-8000 series                                 | 1979 | [QUASI88]                         | _None_                                                                                                                                                                                                                         | `PCEIGHTYEIGHT` ⚠️     |
-| NEC PC-8800 (PC-88) series                         | 1981 | [QUASI88]                         | _None_                                                                                                                                                                                                                         | `PCEIGHTYEIGHT` ⚠️     |
-| NEC PC-9800 (PC-98) series                         | 1982 | [Neko Project II Kai]             | `np2/font.bmp`, `np2/FONT.ROM`, `np2/bios.rom`, `np2/itf.rom`, `np2/sound.rom`                                                                                                                                                 | `PCNINETYEIGHT` ⚠️     |
-| NEC PC-FX _(J)_                                    | 1994 | [Beetle PCFX]                     | `pcfx.rom`                                                                                                                                                                                                                     | `PCFX` ⚠️              |
-| NEC TurboGrafx-16 _(U)_                            | 1989 | [Beetle PCE Fast]                 | _None_                                                                                                                                                                                                                         | `PCE`                 |
-| Nintendo Entertainment System (NES) _(U/E)_        | 1985 | [FCEUmm]                          | _None_                                                                                                                                                                                                                         | `FC`                  |
-| Nintendo Entertainment System (NES) _(U/E)_        | 1985 | [Nestopia UE]                     | _None_                                                                                                                                                                                                                         | `NESTOPIA`            |
-| Nintendo Family Computer (Famicom) _(J)_           | 1983 | [FCEUmm]                          | _None_                                                                                                                                                                                                                         | `FC`                  |
-| Nintendo Family Computer (Famicom) _(J)_           | 1983 | [Nestopia UE]                     | _None_                                                                                                                                                                                                                         | `NESTOPIA`            |
-| Nintendo Virtual Boy                               | 1995 | [Beetle VB]                       | _None_                                                                                                                                                                                                                         | `VB`                  |
-| Philips Videopac _(J/E)_                           | 1978 | [O2EM]                            | `o2rom.bin`                                                                                                                                                                                                                    | `VIDEOPAC`            |
-| Sega Genesis _(U)_                                 | 1989 | [PicoDrive]                       | `bios_MD.bin`                                                                                                                                                                                                                  | `MD`                  |
-| Sega Mark III _(J)_                                | 1985 | [PicoDrive]                       | `bios_E.sms`, `bios_U.sms`, `bios_J.sms`                                                                                                                                                                                       | `MS`                  |
-| Sega Master System _(U/E)_                         | 1986 | [PicoDrive]                       | `bios_E.sms`, `bios_U.sms`, `bios_J.sms`                                                                                                                                                                                       | `MS`                  |
-| Sega Mega Drive _(J/E)_                            | 1988 | [PicoDrive]                       | `bios_MD.bin`                                                                                                                                                                                                                  | `MD`                  |
-| Sega SG-1000 _(J)_                                 | 1983 | [Gearsystem]                      | _None_                                                                                                                                                                                                                         | `SEGASGONE`           |
-| Sharp X1 _(J)_                                     | 1982 | [X Millennium]                    | `xmil/IPLROM.X1`, `xmil/IPLROM.X1T`                                                                                                                                                                                            | `XONE` ⚠️              |
-| Sharp X68000 _(J)_                                 | 1987 | [PX68k]                           | `keropi/iplrom.dat`, `keropi/cgrom.dat`, `keropi/iplrom30.dat`, `keropi/iplromco.dat`, `keropi/iplromxv.dat`                                                                                                                   | `X68000` ⚠️            |
-| Sinclair ZX Spectrum _(E)_                         | 1982 | [Fuse]                            | _None_                                                                                                                                                                                                                         | `ZXS`                 |
-| Sinclair ZX-81                                     | 1981 | [EightyOne]                       | _None_                                                                                                                                                                                                                         | `ZXEIGHTYONE`         |
-| SNK Neo Geo                                        | 1990 | [Final Burn Alpha (2012) Neo Geo] | `neogeo.zip`                                                                                                                                                                                                                   | `NEOGEO`              |
-| SNK Neo Geo CD                                     | 1994 | [NeoCD]                           | (`000-lo.lo` or `ng-lo.rom`) + (`neocd_f.rom` or `neocd.bin` or `uni-bioscd.rom`) + `neogeo.zip`                                                                                                                               | `NEOCD`               |
-| Sony Playstation                                   | 1995 | [PCSX ReARMed]                    | `PSXONPSP660.bin`, `scph101.bin`, `scph7001.bin`, `scph5501.bin`, `scph1001.bin`                                                                                                                                               | `PS`                  |
-| Super Famicom _(J)_                                | 1990 | [Snes9x]                          | _None_                                                                                                                                                                                                                         | `SFC`                 |
-| Super Nintendo Entertainment System (SNES) _(U/E)_ | 1991 | [Snes9x]                          | _None_                                                                                                                                                                                                                         | `SFC`                 |
-| Uzebox                                             | 2008 | [Uzem]                            | _None_                                                                                                                                                                                                                         | `UZEBOX` ⚠️            |
+![Consoles and PC Systems](images/header-console.png)
+
+If the game system has a flag next to it, it means that the name/device was only sold in that market.
+
+| Game system                                          | Year | Core/Emulator                     | BIOS filenames                                                                                                                                                                                                                 | ROM folder name       |
+|------------------------------------------------------|------|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------|
+| 3DO Interactive Multiplayer¹                         | 1993 | [Opera]                           | `panafz1.bin` or `panafz10.bin` or `panafz10-norsa.bin` or `panafz10e-anvil.bin` or `panafz10e-anvil-norsa.bin` or `panafz1j.bin` or `panafz1j-norsa.bin` or `goldstar.bin` or `sanyotry.bin` or `3do_arcade_saot.bin`         | `PANASONIC` ⚠️         |
+| Amstrad CPC                                          | 1984 | [CrocoDS]                         | _None_                                                                                                                                                                                                                         | `CPC`                 |
+| Atari 800                                            | 1979 | [Atari800]                        | `ATARIOSA.ROM`, `ATARIOSB.ROM`, `ATARIBAS.ROM`                                                                                                                                                                                 | `EIGHTHUNDRED` ⚠️      |
+| Atari 2600                                           | 1977 | [Stella 2014]                     | _None_                                                                                                                                                                                                                         | `ATARI`               |
+| Atari 5200 SuperSystem                               | 1982 | [a5200]                           | `5200.rom`, `ATARIBAS.ROM`                                                                                                                                                                                                     | `FIFTYTWOHUNDRED`     |
+| Atari 7800 ProSystem                                 | 1986 | [ProSystem]                       | `7800 BIOS (U).rom`, `7800 BIOS (E).rom`                                                                                                                                                                                       | `SEVENTYEIGHTHUNDRED` |
+| Atari Falcon                                         | 1992 | [Hatari]                          | `tos.img` v4.x                                                                                                                                                                                                                 | `ATARIST` ⚠️           |
+| Atari MEGA STE                                       | 1991 | [Hatari]                          | `tos.img` v1.x, 2.x                                                                                                                                                                                                            | `ATARIST` ⚠️           |
+| Atari ST                                             | 1985 | [Hatari]                          | `tos.img` v1.00, 1.02, 1.04, 2.06                                                                                                                                                                                              | `ATARIST` ⚠️           |
+| Atari TT                                             | 1990 | [Hatari]                          | `tos.img` v3.x                                                                                                                                                                                                                 | `ATARIST` ⚠️           |
+| ColecoVision                                         | 1982 | [blueMSX]                         | `coleco.rom`                                                                                                                                                                                                                   | `COLECO`              |
+| Commodore 64                                         | 1982 | [VICE] x64                        | _None_                                                                                                                                                                                                                         | `COMMODORE`           |
+| Commodore 128                                        | 1985 | [VICE] x128                       | _None_                                                                                                                                                                                                                         | `C128`                |
+| Commodore Amiga                                      | 1985 | [PUAE 2021]                       | `kick33180.A500`, `kick34005.A500`, `kick34005.CDTV`, `kick37175.A500`, `kick37350.A600`, `kick39106.A1200`, `kick39106.A4000`, `kick40060.CD32`, `kick40060.CD32.ext`, `kick40063.A600`, `kick40068.A1200`, `kick40068.A4000` | `AMIGA`               |
+| Commodore Amiga CD32                                 | 1993 | [PUAE 2021]                       | `kick33180.A500`, `kick34005.A500`, `kick40068.A1200`                                                                                                                                                                          | `AMIGACD`             |
+| Commodore PET                                        | 1977 | [VICE] xpet                       | _None_                                                                                                                                                                                                                         | `PET`                 |
+| Commodore Plus/4                                     | 1984 | [VICE] xplus4                     | _None_                                                                                                                                                                                                                         | `PLUS4`               |
+| Commodore VIC-20                                     | 1980 | [VICE] xvic                       | _None_                                                                                                                                                                                                                         | `VIC20`               |
+| Fairchild Channel F                                  | 1976 | [FreeChaF]                        | `sl31253.bin`, `sl31254.bin`, `sl90025.bin`                                                                                                                                                                                    | `FAIRCHILD`           |
+| GCE Vectrex                                          | 1982 | [vecx]                            | _None_                                                                                                                                                                                                                         | `VECTREX`             |
+| Magnavox Odyssey 2 🇺🇸                              | 1978 | [O2EM]                            | `o2rom.bin`                                                                                                                                                                                                                    | `ODYSSEY`             |
+| Mattel Intellivision                                 | 1979 | [FreeIntv]                        | `exec.bin`, `grom.bin`                                                                                                                                                                                                         | `INTELLIVISION`       |
+| Microsoft MS-DOS                                     | 1981 | [DOSBox-Pure]                     | _None_                                                                                                                                                                                                                         | `DOS`                 |
+| NEC PC Engine 🇯🇵 🇪🇺                              | 1987 | [Beetle PCE Fast]                 | _None_                                                                                                                                                                                                                         | `PCE`                 |
+| NEC PC Engine SuperGrafx 🇯🇵                        | 1989 | [Beetle SuperGrafx]               | `syscard3.pce`                                                                                                                                                                                                                 | `SGFX`                |
+| NEC PC-8000 series                                   | 1979 | [QUASI88]                         | _None_                                                                                                                                                                                                                         | `PCEIGHTYEIGHT` ⚠️     |
+| NEC PC-8800 (PC-88) series                           | 1981 | [QUASI88]                         | _None_                                                                                                                                                                                                                         | `PCEIGHTYEIGHT` ⚠️     |
+| NEC PC-9800 (PC-98) series                           | 1982 | [Neko Project II Kai]             | `np2/font.bmp`, `np2/FONT.ROM`, `np2/bios.rom`, `np2/itf.rom`, `np2/sound.rom`                                                                                                                                                 | `PCNINETYEIGHT` ⚠️     |
+| NEC PC-FX 🇯🇵                                       | 1994 | [Beetle PCFX]                     | `pcfx.rom`                                                                                                                                                                                                                     | `PCFX` ⚠️              |
+| NEC TurboGrafx-16 🇺🇸                               | 1989 | [Beetle PCE Fast]                 | _None_                                                                                                                                                                                                                         | `PCE`                 |
+| Nintendo Entertainment System (NES) 🇺🇸 🇪🇺        | 1985 | [FCEUmm]                          | _None_                                                                                                                                                                                                                         | `FC`                  |
+| Nintendo Entertainment System (NES) 🇺🇸 🇪🇺        | 1985 | [Nestopia UE]                     | _None_                                                                                                                                                                                                                         | `NESTOPIA`            |
+| Nintendo Family Computer (Famicom) 🇯🇵              | 1983 | [FCEUmm]                          | _None_                                                                                                                                                                                                                         | `FC`                  |
+| Nintendo Family Computer (Famicom) 🇯🇵              | 1983 | [Nestopia UE]                     | _None_                                                                                                                                                                                                                         | `NESTOPIA`            |
+| Nintendo Virtual Boy                                 | 1995 | [Beetle VB]                       | _None_                                                                                                                                                                                                                         | `VB`                  |
+| Philips Videopac 🇯🇵 🇪🇺                           | 1978 | [O2EM]                            | `o2rom.bin`                                                                                                                                                                                                                    | `VIDEOPAC`            |
+| Sega Genesis 🇺🇸                                    | 1989 | [PicoDrive]                       | `bios_MD.bin`                                                                                                                                                                                                                  | `MD`                  |
+| Sega Mark III 🇯🇵                                   | 1985 | [PicoDrive]                       | `bios_E.sms`, `bios_U.sms`, `bios_J.sms`                                                                                                                                                                                       | `MS`                  |
+| Sega Master System 🇺🇸 🇪🇺                         | 1986 | [PicoDrive]                       | `bios_E.sms`, `bios_U.sms`, `bios_J.sms`                                                                                                                                                                                       | `MS`                  |
+| Sega Mega Drive 🇯🇵 🇪🇺                            | 1988 | [PicoDrive]                       | `bios_MD.bin`                                                                                                                                                                                                                  | `MD`                  |
+| Sega SG-1000 🇯🇵                                    | 1983 | [Gearsystem]                      | _None_                                                                                                                                                                                                                         | `SEGASGONE`           |
+| Sharp X1 🇯🇵                                        | 1982 | [X Millennium]                    | `xmil/IPLROM.X1`, `xmil/IPLROM.X1T`                                                                                                                                                                                            | `XONE` ⚠️              |
+| Sharp X68000 🇯🇵                                    | 1987 | [PX68k]                           | `keropi/iplrom.dat`, `keropi/cgrom.dat`, `keropi/iplrom30.dat`, `keropi/iplromco.dat`, `keropi/iplromxv.dat`                                                                                                                   | `X68000` ⚠️            |
+| Sinclair ZX Spectrum 🇪🇺                            | 1982 | [Fuse]                            | _None_                                                                                                                                                                                                                         | `ZXS`                 |
+| Sinclair ZX-81 🇪🇺                                  | 1981 | [EightyOne]                       | _None_                                                                                                                                                                                                                         | `ZXEIGHTYONE`         |
+| SNK Neo Geo                                          | 1990 | [Final Burn Alpha (2012) Neo Geo] | `neogeo.zip`                                                                                                                                                                                                                   | `NEOGEO`              |
+| SNK Neo Geo CD                                       | 1994 | [NeoCD]                           | (`000-lo.lo` or `ng-lo.rom`) + (`neocd_f.rom` or `neocd.bin` or `uni-bioscd.rom`) + `neogeo.zip`                                                                                                                               | `NEOCD`               |
+| Sony Playstation                                     | 1995 | [PCSX ReARMed]                    | `PSXONPSP660.bin`, `scph101.bin`, `scph7001.bin`, `scph5501.bin`, `scph1001.bin`                                                                                                                                               | `PS`                  |
+| Super Famicom 🇯🇵                                   | 1990 | [Snes9x]                          | _None_                                                                                                                                                                                                                         | `SFC`                 |
+| Super Nintendo Entertainment System (SNES) 🇺🇸 🇪🇺 | 1991 | [Snes9x]                          | _None_                                                                                                                                                                                                                         | `SFC`                 |
+| Uzebox                                               | 2008 | [Uzem]                            | _None_                                                                                                                                                                                                                         | `UZEBOX` ⚠️            |
 
 ¹ 3DO was a set of specifications, with manufacturing licensed to Panasonic, GoldStar, Sanyo, Creative, and Samsung.
 
@@ -156,6 +160,8 @@ These systems are deemed _unplayable_ either because emulation is far too slow o
 
 ## Handheld Systems
 
+![Handheld Systems](images/header-handheld.png)
+
 | Game system | Year | Core/Emulator | BIOS filenames | ROM folder name |
 |-------------|------|---------------|----------------|-----------------|
 |             |      |               |                | `GB`            |
@@ -172,6 +178,8 @@ These systems are deemed _unplayable_ either because emulation is far too slow o
 |             |      |               |                | `WS`            |
 
 ## Add-ons and Peripherals
+
+![Add-ons and Peripherals](images/header-peripherals.png)
 
 | Game system                                | Year | Core/Emulator     | BIOS filenames                                    | ROM folder name |
 |--------------------------------------------|------|-------------------|---------------------------------------------------|-----------------|
@@ -192,12 +200,16 @@ These systems are deemed _unplayable_ either because emulation is far too slow o
 
 ## Ports
 
+![Ports](images/header-ports.png)
+
 | Game system | Year | Core/Emulator | BIOS filenames | ROM folder name |
 |-------------|------|---------------|----------------|-----------------|
 |             |      |               |                | `DOOM`          |
 |             |      |               |                | `QUAKE`         |
 
 ## Miscellaneous
+
+![Miscellaneous](images/header-misc.png)
 
 | Game system                       | Year | Core/Emulator | BIOS filenames                                    | ROM folder name |
 |-----------------------------------|------|---------------|---------------------------------------------------|-----------------|
@@ -216,6 +228,7 @@ These systems are deemed _unplayable_ either because emulation is far too slow o
 [blueMSX]: https://github.com/libretro/blueMSX-libretro
 [CrocoDS]: https://github.com/libretro/libretro-crocods
 [DOSBox-Pure]: https://github.com/libretro/dosbox-pure
+[EightyOne]: https://github.com/libretro/81-libretro
 [fake-08]: https://github.com/jtothebell/fake-08
 [FCEUmm]: https://github.com/libretro/libretro-fceumm
 [Final Burn Alpha (2012) Neo Geo]: https://github.com/libretro/fbalpha2012_neogeo
@@ -223,6 +236,7 @@ These systems are deemed _unplayable_ either because emulation is far too slow o
 [Finalburn Neo]: https://docs.libretro.com/guides/arcade-getting-started/#finalburn-neo
 [FreeChaF]: https://github.com/libretro/FreeChaF
 [FreeIntv]: https://github.com/libretro/FreeIntv
+[Fuse]: https://github.com/libretro/fuse-libretro
 [Gearsystem]: https://github.com/drhelius/Gearsystem/tree/master/platforms/libretro
 [Hatari]: https://github.com/libretro/hatari
 [MAME 2000]: https://docs.libretro.com/guides/arcade-getting-started/#mame-2000
@@ -239,6 +253,7 @@ These systems are deemed _unplayable_ either because emulation is far too slow o
 [PicoDrive]: https://github.com/libretro/picodrive
 [ProSystem]: https://github.com/libretro/prosystem-libretro
 [PUAE 2021]: https://github.com/libretro/libretro-uae
+[PX68k]: https://github.com/libretro/px68k-libretro
 [QUASI88]: https://github.com/libretro/quasi88-libretro
 [scmvm]: https://www.scummvm.org
 [ScummVM]: https://github.com/libretro/scummvm-wrapper
@@ -251,7 +266,4 @@ These systems are deemed _unplayable_ either because emulation is far too slow o
 [VeMUlator]: https://github.com/libretro/vemulator-libretro
 [VICE]: https://github.com/libretro/vice-libretro
 [Virtual Jaguar]: https://github.com/libretro/virtualjaguar-libretro
-[PX68k]: https://github.com/libretro/px68k-libretro
 [X Millennium]: https://github.com/libretro/xmil-libretro
-[EightyOne]: https://github.com/libretro/81-libretro
-[Fuse]: https://github.com/libretro/fuse-libretro
