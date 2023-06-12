@@ -181,22 +181,24 @@ These systems are deemed _unplayable_ either because emulation is far too slow o
 
 ![Add-ons and Peripherals](images/header-peripherals.png)
 
-| Game system                                | Year | Core/Emulator     | BIOS filenames                                    | ROM folder name |
-|--------------------------------------------|------|-------------------|---------------------------------------------------|-----------------|
-| Bandai SuFami Turbo _(J)_                  | 1996 | [Snes9x]          | `STBIOS.bin`                                      | `SUFAMI`        |
-| NEC PC Engine CD-ROM² _(J/E)_              | 1988 | [Beetle PCE Fast] | `syscard3.pce`                                    | `PCECD`         |
-| NEC TurboGrafx-CD _(U)_                    | 1989 | [Beetle PCE Fast] | `syscard3.pce`                                    | `PCECD`         |
-| Nintendo Family Computer Disk System _(J)_ | 1986 | [FCEUmm]          | `disksys.rom`                                     | `FDS`           |
-| Nintendo Satellaview _(J)_                 | 1995 | [Snes9x]          | `BS-X.bin`                                        | `SATELLAVIEW`   |
-| Nintendo Super Game Boy                    | 1994 | [mGBA]            | `sgb_bios.bin`                                    | `SGB`           |
-| Nintendo Super Game Boy 2 _(J)_            | 1998 | [mGBA]            | `sgb_bios.bin`                                    | `SGB`           |
-| Sega CD _(U)_                              | 1992 | [PicoDrive]       | `bios_CD_U.bin`, `bios_CD_E.bin`, `bios_CD_J.bin` | `SEGACD`        |
-| Sega Genesis 32X _(U)_                     | 1994 | [PicoDrive]       | _None_                                            | `THIRTYTWOX`    |
-| Sega Mega Drive 32X _(E)_                  | 1994 | [PicoDrive]       | _None_                                            | `THIRTYTWOX`    |
-| Sega Mega-CD _(J/E)_                       | 1991 | [PicoDrive]       | `bios_CD_U.bin`, `bios_CD_E.bin`, `bios_CD_J.bin` | `SEGACD`        |
-| Sega Super 32X _(J)_                       | 1994 | [PicoDrive]       | _None_                                            | `THIRTYTWOX`    |
-| Sega Visual Memory System (VMS) _(J/E)_    | 1998 | [VeMUlator]       | _None_                                            | `VMU` ⚠️         |
-| Sega Visual Memory Unit (VMU) _(U)_        | 1999 | [VeMUlator]       | _None_                                            | `VMU` ⚠️         |
+If the game system has a flag next to it, it means that the name/device was only sold in that market.
+
+| Game system                               | Year | Core/Emulator     | BIOS filenames                                    | ROM folder name |
+|-------------------------------------------|------|-------------------|---------------------------------------------------|-----------------|
+| Bandai SuFami Turbo 🇯🇵                  | 1996 | [Snes9x]          | `STBIOS.bin`                                      | `SUFAMI`        |
+| NEC PC Engine CD-ROM² 🇯🇵 🇪🇺           | 1988 | [Beetle PCE Fast] | `syscard3.pce`                                    | `PCECD`         |
+| NEC TurboGrafx-CD 🇺🇸                    | 1989 | [Beetle PCE Fast] | `syscard3.pce`                                    | `PCECD`         |
+| Nintendo Family Computer Disk System 🇯🇵 | 1986 | [FCEUmm]          | `disksys.rom`                                     | `FDS`           |
+| Nintendo Satellaview 🇯🇵                 | 1995 | [Snes9x]          | `BS-X.bin`                                        | `SATELLAVIEW`   |
+| Nintendo Super Game Boy                   | 1994 | [mGBA]            | `sgb_bios.bin`                                    | `SGB`           |
+| Nintendo Super Game Boy 2 🇯🇵            | 1998 | [mGBA]            | `sgb_bios.bin`                                    | `SGB`           |
+| Sega CD 🇺🇸                              | 1992 | [PicoDrive]       | `bios_CD_U.bin`, `bios_CD_E.bin`, `bios_CD_J.bin` | `SEGACD`        |
+| Sega Genesis 32X 🇺🇸                     | 1994 | [PicoDrive]       | _None_                                            | `THIRTYTWOX`    |
+| Sega Mega Drive 32X 🇪🇺                  | 1994 | [PicoDrive]       | _None_                                            | `THIRTYTWOX`    |
+| Sega Mega-CD 🇯🇵 🇪🇺                    | 1991 | [PicoDrive]       | `bios_CD_U.bin`, `bios_CD_E.bin`, `bios_CD_J.bin` | `SEGACD`        |
+| Sega Super 32X 🇯🇵                       | 1994 | [PicoDrive]       | _None_                                            | `THIRTYTWOX`    |
+| Sega Visual Memory System (VMS) 🇯🇵 🇪🇺 | 1998 | [VeMUlator]       | _None_                                            | `VMU` ⚠️         |
+| Sega Visual Memory Unit (VMU) 🇺🇸        | 1999 | [VeMUlator]       | _None_                                            | `VMU` ⚠️         |
 
 ## Ports
 
