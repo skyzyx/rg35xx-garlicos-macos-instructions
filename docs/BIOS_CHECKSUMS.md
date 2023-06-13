@@ -6,6 +6,21 @@ Most of the BIOS files used for emulation go into this root `BIOS/` directory.
 
 These are sorted the way that Bash sorts things — numbers, then UPPER alpha, then lower alpha.
 
+## How to verify checksums
+
+With [Homebrew] installed, install the `coreutils` package. This will give you the `md5sum` command.
+
+```bash
+brew install coreutils
+```
+
+Then you can generate the checksums yourself, and compare them to the ones listed here.
+
+```bash
+md5sum --tag 5200.rom
+#=> MD5 (5200.rom) = 281f20ea4320404ec820fb7ec0693b38
+```
+
 ## `BIOS/`
 
 | File                        | MD5 Checksum                       |
@@ -34,7 +49,7 @@ These are sorted the way that Bash sorts things — numbers, then UPPER alpha, t
 | `c52.bin`                   | `f1071cdb0b6b10dde94d3bc8a6146387` |
 | `cchip.zip`                 | `df6f8a3d83c028a5cb9f2f2be60773f3` |
 | `channelf.zip`              | `2f2f8de3827ae1faf2495e497ca95232` |
-| `checksum.sh`               | `80b723656ea71ad7660cb4b4536b58c5` |
+| `checksum.sh`               | `7830cad9950f7de1ac6b7f0f45ba0134` |
 | `cnebula.zip`               | `c683cb5dc4ef34ba43de281be67f1a6b` |
 | `coleco.rom`                | `2c66f5911e5b42b8ebe113403548eee7` |
 | `coleco.zip`                | `94915714a814a84f7c292e6db71f3ad2` |
@@ -141,3 +156,5 @@ Used for _Sharp X1_ emulation.
 |-------------------|------------------------------------|
 | `xmil/IPLROM.X1`  | `eeeea1cd29c6e0e8b094790ae969bfa7` |
 | `xmil/IPLROM.X1T` | `851e4a5936f17d13f8c39a980cf00d77` |
+
+[Homebrew]: https://mac.install.guide/homebrew/index.html
