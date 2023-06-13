@@ -213,15 +213,6 @@ If the game system has a flag next to it, it means that the name/device was only
 | Sega Visual Memory System (VMS) 🇯🇵 🇪🇺 | 1998 | [VeMUlator]       | _None_                                            | `VMU` ⚠️         |
 | Sega Visual Memory Unit (VMU) 🇺🇸        | 1999 | [VeMUlator]       | _None_                                            | `VMU` ⚠️         |
 
-## Ports
-
-![Ports](images/header-ports.png)
-
-| Game system | Year | Core/Emulator | BIOS filenames | ROM folder name |
-|-------------|------|---------------|----------------|-----------------|
-|             |      |               |                | `DOOM`          |
-|             |      |               |                | `QUAKE`         |
-
 ## Miscellaneous
 
 ![Miscellaneous](images/header-misc.png)
@@ -235,10 +226,12 @@ If the game system has a flag next to it, it means that the name/device was only
 
 [a5200]: https://github.com/libretro/a5200
 [Atari800]: https://github.com/libretro/libretro-atari800
+[Beetle NGP]: https://github.com/libretro/beetle-ngp-libretro
 [Beetle PCE Fast]: https://github.com/libretro/beetle-pce-fast-libretro
 [Beetle PCFX]: https://github.com/libretro/beetle-pcfx-libretro
 [Beetle SuperGrafx]: https://github.com/libretro/beetle-supergrafx-libretro
 [Beetle VB]: https://github.com/libretro/beetle-vb-libretro
+[Beetle Wonderswan]: https://github.com/libretro/beetle-wswan-libretro
 [blueMSX from libretro]: https://docs.libretro.com/library/bluemsx/#bios
 [blueMSX]: https://github.com/libretro/blueMSX-libretro
 [CrocoDS]: https://github.com/libretro/libretro-crocods
@@ -252,7 +245,11 @@ If the game system has a flag next to it, it means that the name/device was only
 [FreeChaF]: https://github.com/libretro/FreeChaF
 [FreeIntv]: https://github.com/libretro/FreeIntv
 [Fuse]: https://github.com/libretro/fuse-libretro
+[Gambatte]: https://github.com/libretro/gambatte-libretro
 [Gearsystem]: https://github.com/drhelius/Gearsystem/tree/master/platforms/libretro
+[gpSP]: https://github.com/libretro/gpsp
+[GW]: https://github.com/libretro/gw-libretro
+[Handy]: https://github.com/libretro/libretro-handy
 [Hatari]: https://github.com/libretro/hatari
 [MAME 2000]: https://docs.libretro.com/guides/arcade-getting-started/#mame-2000
 [MAME 2003 Plus]: https://docs.libretro.com/guides/arcade-getting-started/#mame-2003-plus
@@ -266,10 +263,13 @@ If the game system has a flag next to it, it means that the name/device was only
 [PCSX ReARMed]: https://github.com/libretro/pcsx_rearmed
 [Pico-8 Fantasy Console]: https://www.lexaloffle.com/pico-8.php
 [PicoDrive]: https://github.com/libretro/picodrive
+[PokeMini]: https://github.com/libretro/PokeMini
+[Potator]: https://github.com/libretro/potator
 [ProSystem]: https://github.com/libretro/prosystem-libretro
 [PUAE 2021]: https://github.com/libretro/libretro-uae
 [PX68k]: https://github.com/libretro/px68k-libretro
 [QUASI88]: https://github.com/libretro/quasi88-libretro
+[SameDuck]: https://github.com/libretro/libretro-core-info/blob/master/sameduck_libretro.info
 [scmvm]: https://www.scummvm.org
 [ScummVM]: https://github.com/libretro/scummvm-wrapper
 [Snes9x]: https://github.com/libretro/snes9x
@@ -282,12 +282,3 @@ If the game system has a flag next to it, it means that the name/device was only
 [VICE]: https://github.com/libretro/vice-libretro
 [Virtual Jaguar]: https://github.com/libretro/virtualjaguar-libretro
 [X Millennium]: https://github.com/libretro/xmil-libretro
-[Handy]: https://github.com/libretro/libretro-handy
-[Beetle Wonderswan]: https://github.com/libretro/beetle-wswan-libretro
-[GW]: https://github.com/libretro/gw-libretro
-[SameDuck]: https://github.com/libretro/libretro-core-info/blob/master/sameduck_libretro.info
-[Gambatte]: https://github.com/libretro/gambatte-libretro
-[gpSP]: https://github.com/libretro/gpsp
-[PokeMini]: https://github.com/libretro/PokeMini
-[Potator]: https://github.com/libretro/potator
-[Beetle NGP]: https://github.com/libretro/beetle-ngp-libretro
