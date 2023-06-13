@@ -18,7 +18,7 @@ If you followed one of the _Installing Garlic OS on your Anbernic RG35XX using m
 
 ### Note about save files
 
-Save files are _emulator-specific_. The (default) emulator that is assigned to a ROM folder will create save files in that emulator's format.
+Save files are _emulator-specific_. The (default) emulator that is assigned to a ROM folder will create save files in that emulator's format (which is why I'm mentioning this here).
 
 If you want to "cross-save" with a different device, you need to ensure you're using the same emulator on the other device.
 
@@ -34,9 +34,27 @@ This applies to **Neo Geo arcade games**, **Neo Geo console games**, **Neo Geo C
 
     1. **Copy** (not move) `ROMS/BIOS/neogeo.zip` to `ROMS/Roms/NEOGEO/neogeo.zip`.
 
+        <details>
+        <summary>See the Terminal command…</summary>
+
+        ```bash
+        cp --verbose --force /Volumes/ROMS/BIOS/neogeo.zip /Volumes/ROMS/Roms/NEOGEO/neogeo.zip
+        ```
+
+        </details>
+
 1. Inside the `ROMS/Roms` folder, create a new subfolder called `NEOCD` if it doesn't already exist.
 
     1. **Copy** (not move) `ROMS/BIOS/neogeo.zip` to `ROMS/Roms/NEOCD/neogeo.zip`.
+
+        <details>
+        <summary>See the Terminal command…</summary>
+
+        ```bash
+        cp --verbose --force /Volumes/ROMS/BIOS/neogeo.zip /Volumes/ROMS/Roms/NEOCD/neogeo.zip
+        ```
+
+        </details>
 
 Yes, this means that there will be multiple copies of `neogeo.zip`on your SD card. No, don't create symlinks.
 
