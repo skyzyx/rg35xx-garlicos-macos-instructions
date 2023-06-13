@@ -17,6 +17,10 @@ Default translations are in _U.S. English_.
 * [Converting your completely legal, disc-based, bin/cue ROMs for PlayStation emulation into compressed, single-file CHDs using macOS](docs/bin-cue-chd.en_us.md)
 * [Add multi-disc games to Garlic OS on your Anbernic RG35XX using macOS](docs/multi-disc-games-garlicos.en_us.md)
 
+### Appendicies
+
+* [Appendix: BIOS Checksums](docs/BIOS_CHECKSUMS.md)
+
 ## Coming soon
 
 * Installing Garlic OS on your Anbernic RG35XX using macOS (multi-card setup)
