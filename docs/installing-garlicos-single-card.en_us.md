@@ -379,11 +379,11 @@ Each step is explained in English with the corresponding terminal command below 
 
 1. Erase the partition. For the name, keep `ROMS`. For the format, choose _MS-DOS (FAT)_.
 
-    ![Screenshot of Disk Utility's erase dialog](images/diskutil-erase@2x.png)
+    ![Screenshot of Disk Utility’s erase dialog](images/diskutil-erase@2x.png)
 
 1. Wait for it to complete.
 
-    ![Screenshot of Disk Utility's completion dialog](images/diskutil-complete@2x.png)
+    ![Screenshot of Disk Utility’s completion dialog](images/diskutil-complete@2x.png)
 
 1. Finally re-copy the `BIOS/` and `CFW/` folders we backed-up earlier, and any ROM files and/or save files that you want to make available to your device.
 

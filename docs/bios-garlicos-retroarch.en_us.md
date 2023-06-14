@@ -1,5 +1,21 @@
 # Finding and adding the correct BIOS files to Garlic OS on the Anbernic RG35XX so that you can play ROMs
 
+Each step is explained in English with the corresponding terminal command below it. These instructions should work without problem on any modern macOS — with either Intel or Apple Silicon CPUs. Tested on macOS Ventura 13.3 on both an Intel i9 chip, and an Apple M1 Max chip.
+
+## Prerequisites
+
+* A _relatively_ [recent version of macOS](https://gist.github.com/skyzyx/225b59847be31b39d3d19c3a1c006862).
+
+    <div><img src="images/finder@2x.png" alt="Finder icon" width="55"></div>
+
+* Comfortable-enough using _Terminal.app_ (or alternatives).
+
+    <div><img src="images/terminal@2x.png" alt="Terminal icon" width="55"></div>
+
+* You have [Homebrew](https://brew.sh) installed. ([Installation](https://mac.install.guide/homebrew/index.html) is outside the scope of this tutorial, but it’s pretty fundamental if you do technical things on your Mac.)
+
+    * This includes installing the [Xcode CLI tools](https://mac.install.guide/homebrew/2.html) (a much smaller download than the _entire_ Xcode).
+
 ## BIOS files for the RG35XX
 
 ![BIOS files for the RG35XX](images/header-bios.png)
@@ -29,7 +45,7 @@ If you followed one of the _Installing Garlic OS on your Anbernic RG35XX using m
     open /Volumes/ROMS/CFW/config/
     ```
 
-    Then double-click `coremapping.json` to open the file with whichever application is configured to open JSON files. (If you don't have a preferred code editor, I can suggest [VS Code].)
+    Then double-click `coremapping.json` to open the file with whichever application is configured to open JSON files. (If you don’t have a preferred code editor, I can suggest [VS Code].)
 
     Alternatively…
 
@@ -41,9 +57,9 @@ If you followed one of the _Installing Garlic OS on your Anbernic RG35XX using m
 
 ### Note about save files
 
-Save files are _emulator-specific_. The (default) emulator that is assigned to a ROM folder will create save files in that emulator's format (which is why I'm mentioning this here).
+Save files are _emulator-specific_. The (default) emulator that is assigned to a ROM folder will create save files in that emulator’s format (which is why I’m mentioning this here).
 
-If you want to "cross-save" with a different device, you need to ensure you're using the same emulator on the other device.
+If you want to "cross-save" with a different device, you need to ensure you’re using the same emulator on the other device.
 
 This is not bulletproof, however. Different systems may use different versions/commits of these emulators, which may be incompatible with each other. So make sure you regularly backup your save files.
 
@@ -53,7 +69,7 @@ This is not bulletproof, however. Different systems may use different versions/c
 
 This applies to **Neo Geo arcade games**, **Neo Geo console games**, **Neo Geo CD games**. Sometimes the Neo Geo emulator looks for BIOS files in the same directory as the game, and sometimes it looks in the `BIOS/` directory.
 
-1. Inside the `ROMS/Roms` folder, create a new subfolder called `NEOGEO` if it doesn't already exist.
+1. Inside the `ROMS/Roms` folder, create a new subfolder called `NEOGEO` if it doesn’t already exist.
 
     1. **Copy** (not move) `ROMS/BIOS/neogeo.zip` to `ROMS/Roms/NEOGEO/neogeo.zip`.
 
@@ -66,7 +82,7 @@ This applies to **Neo Geo arcade games**, **Neo Geo console games**, **Neo Geo C
 
         </details>
 
-1. Inside the `ROMS/Roms` folder, create a new subfolder called `NEOCD` if it doesn't already exist.
+1. Inside the `ROMS/Roms` folder, create a new subfolder called `NEOCD` if it doesn’t already exist.
 
     1. **Copy** (not move) `ROMS/BIOS/neogeo.zip` to `ROMS/Roms/NEOCD/neogeo.zip`.
 
@@ -79,22 +95,22 @@ This applies to **Neo Geo arcade games**, **Neo Geo console games**, **Neo Geo C
 
         </details>
 
-Yes, this means that there will be multiple copies of `neogeo.zip`on your SD card. No, don't create symlinks.
+Yes, this means that there will be multiple copies of `neogeo.zip`on your SD card. No, don’t create symlinks.
 
 ## Arcade Systems
 
 ![Arcade Systems](images/header-arcade.png)
 
-> **NOTE:** While you can certainly do some fiddling if you are a true _arcade aficionado_, for most people we're going to recommend _FinalBurn Neo_ for playing arcade games. It seems to work more consistently than MAME, CPS, or the other options.
+> **NOTE:** While you can certainly do some fiddling if you are a true _arcade aficionado_, for most people we’re going to recommend _FinalBurn Neo_ for playing arcade games. It seems to work more consistently than MAME, CPS, or the other options.
 
-Inside the `ROMS/Roms` folder, create a new subfolder called `FBNEO` if it doesn't already exist. This is where you will put all of the Arcade ROMs.
+Inside the `ROMS/Roms` folder, create a new subfolder called `FBNEO` if it doesn’t already exist. This is where you will put all of the Arcade ROMs.
 
 > **NOTE:** You can validate MD5 checksums using [Appendix: BIOS Checksums].
 
 <details>
 <summary>More details…</summary>
 
-Garlic OS and RetroArch will try to execute games inside the `FBNEO` folder with the _Finalburn Neo_ arcade emulator. This is _probably OK_, but if you have an arcade game that doesn't work well with _Finalburn Neo_, there are some alternatives.
+Garlic OS and RetroArch will try to execute games inside the `FBNEO` folder with the _Finalburn Neo_ arcade emulator. This is _probably OK_, but if you have an arcade game that doesn’t work well with _Finalburn Neo_, there are some alternatives.
 
 | Folder     | Emulator                 |
 |------------|--------------------------|

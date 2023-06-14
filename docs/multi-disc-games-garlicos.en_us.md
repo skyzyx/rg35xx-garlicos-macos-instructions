@@ -27,7 +27,7 @@ Each step is explained in English with the corresponding terminal command below 
 
 ## Decompressing the file
 
-1. After downloading the game from the homebrew developer's website, you find that the game is compressed as a `.7z` file.
+1. After downloading the game from the homebrew developer’s website, you find that the game is compressed as a `.7z` file.
 
 1. Decompress the `.7z` file.
 
@@ -45,7 +45,7 @@ Each step is explained in English with the corresponding terminal command below 
 
 1. Follow the instructions in “[Converting your completely legal, disc-based, bin/cue ROMs for PlayStation emulation into compressed, single-file CHDs using macOS](bin-cue-chd.en_us.md)”
 
-1. When that's done, each folder will have a `.bin`, `.cue`, and `.chd` file.
+1. When that’s done, each folder will have a `.bin`, `.cue`, and `.chd` file.
 
     ![Screenshot of the files in Finder](images/multi-disc-chd@2x.png)
 
@@ -73,7 +73,7 @@ Each step is explained in English with the corresponding terminal command below 
         | gtee "Random Game that is a Legal ROM (USA).m3u"
     ```
 
-1. When that's done, you should confirm that your directory structure has the `.m3u` file as a _sibling_ (i.e., at the same level) of the folder which contains the `.chd` files.
+1. When that’s done, you should confirm that your directory structure has the `.m3u` file as a _sibling_ (i.e., at the same level) of the folder which contains the `.chd` files.
 
     ![Screenshot of the files in Finder](images/multi-disc-finder-m3u@2x.png)
 

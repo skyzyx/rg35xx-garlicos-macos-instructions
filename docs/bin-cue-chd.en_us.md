@@ -25,7 +25,7 @@ Each step is explained in English with the corresponding terminal command below 
 
 ## Decompressing the file
 
-1. After downloading the game from the homebrew developer's website, you find that the game is compressed as a `.7z` file.
+1. After downloading the game from the homebrew developer’s website, you find that the game is compressed as a `.7z` file.
 
 1. Decompress the `.7z` file.
 
@@ -51,7 +51,7 @@ Each step is explained in English with the corresponding terminal command below 
 
 1. In Terminal, type `cd` followed by the spacebar.
 
-1. Using your mouse/trackpad, click-and-drag the `bin-cue-chd-main` folder from Finder into your Terminal window. You'll notice that the path of the folder got filled-in _after_ the `cd `.
+1. Using your mouse/trackpad, click-and-drag the `bin-cue-chd-main` folder from Finder into your Terminal window. You’ll notice that the path of the folder got filled-in _after_ the `cd `.
 
 1. Press enter/return. You are now inside the `bin-cue-chd-main` folder in your Terminal app.
 
@@ -63,7 +63,7 @@ Each step is explained in English with the corresponding terminal command below 
 
 ## Running a shell script, for the _nearly-absolute beginner_
 
-You're stiil in the Terminal app, and still inside the `bin-cue-chd-main` folder. Right?
+You’re stiil in the Terminal app, and still inside the `bin-cue-chd-main` folder. Right?
 
 > **NOTE:** To check, type `pwd` and press enter/return. You should see a path that ends with `bin-cue-chd-main`.
 
@@ -75,7 +75,7 @@ You're stiil in the Terminal app, and still inside the `bin-cue-chd-main` folder
 
 1. Find the Finder window that shows the folder where your `.bin`/`.cue` ROM is.
 
-1. Just like before — using your mouse/trackpad, click-and-drag the ROM folder from Finder into your Terminal window. You'll notice that the path of the folder got filled-in _after_ the `./convert.sh `.
+1. Just like before — using your mouse/trackpad, click-and-drag the ROM folder from Finder into your Terminal window. You’ll notice that the path of the folder got filled-in _after_ the `./convert.sh `.
 
     ```bash
     ./convert.sh /example/path/to/your/game/folder
@@ -87,7 +87,7 @@ You're stiil in the Terminal app, and still inside the `bin-cue-chd-main` folder
 
 ## Converting to a `.chd` file
 
-1. You'll see something _similar_ to:
+1. You’ll see something _similar_ to:
 
     ```plain
     Will process files on directory: /Users/rparman/Desktop/Legal ROMS/Random Game that is a Legal ROM (USA)
@@ -115,12 +115,12 @@ You're stiil in the Terminal app, and still inside the `bin-cue-chd-main` folder
 
     ![Screenshot of what Terminal should look like](images/terminal-converting@2x.png)
 
-1. When it's done, you'll have a new `.chd` file in the same folder as the `.bin`/`.cue` files. The `.chd` is a _replacement_ for the `.bin`/`.cue` files.
+1. When it’s done, you’ll have a new `.chd` file in the same folder as the `.bin`/`.cue` files. The `.chd` is a _replacement_ for the `.bin`/`.cue` files.
 
     It is now _one file_ that contains your game, and uses less space on-disk.
 
     ![Screenshot of what Finder should look like](images/finder-done@2x.png)
 
-1. When you're ready, you can copy it to the location where you keep/play your other legal ROMs.
+1. When you’re ready, you can copy it to the location where you keep/play your other legal ROMs.
 
     ![Screenshot of what Finder should look like](images/copy-to-emulator@2x.png)
