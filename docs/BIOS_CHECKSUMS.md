@@ -8,18 +8,26 @@ These are sorted the way that Bash sorts things — numbers, then UPPER alpha, t
 
 ## How to verify checksums
 
-With [Homebrew] installed, install the `coreutils` package. This will give you the `md5sum` command.
+1. With [Homebrew] installed, install the `coreutils` package. This will give you the `md5sum` command.
 
-```bash
-brew install coreutils
-```
+    ```bash
+    brew install coreutils
+    ```
 
-Then you can generate the checksums yourself, and compare them to the ones listed here.
+1. Download the [bios.md5] file, and save it into the `BIOS/` directory. (Run this whole command at once.)
 
-```bash
-md5sum --tag 5200.rom
-#=> MD5 (5200.rom) = 281f20ea4320404ec820fb7ec0693b38
-```
+    ```bash
+    curl --silent --show-error --location --fail \
+        https://github.com/skyzyx/rg35xx-garlicos-macos-instructions/raw/main/bios.md5 \
+        --output /Volumes/ROMS/BIOS/bios.md5
+    ```
+
+1. Then you can validate the checksums. If everything is OK, there will be no output. There will only be output if there is a problem.
+
+    ```bash
+    cd /Volumes/ROMS/BIOS/ && \
+    md5sum --ignore-missing --quiet --check bios.md5
+    ```
 
 ## `BIOS/`
 
@@ -37,6 +45,7 @@ md5sum --tag 5200.rom
 | `PSXONPSP660.BIN`           | `c53ca5908936d412331790f4426c6c33` |
 | `STBIOS.bin`                | `d3a44ba7d42a74d3ac58cb9c14c6a5ca` |
 | `bios.gg`                   | `672e104c3be3a238301aceffc3b23fd6` |
+| `bios.md5`                  | `8e6590039bcd357d859d7c62a2a5f7f0` |
 | `bios.min`                  | `1e4fb124a3a886865acb574f388c803d` |
 | `bios_CD_E.bin`             | `e66fa1dc5820d254611fdcdba0662372` |
 | `bios_CD_J.bin`             | `278a9397d192149e84e820ac621a8edd` |
@@ -49,7 +58,7 @@ md5sum --tag 5200.rom
 | `c52.bin`                   | `f1071cdb0b6b10dde94d3bc8a6146387` |
 | `cchip.zip`                 | `df6f8a3d83c028a5cb9f2f2be60773f3` |
 | `channelf.zip`              | `2f2f8de3827ae1faf2495e497ca95232` |
-| `checksum.sh`               | `7830cad9950f7de1ac6b7f0f45ba0134` |
+| `checksum.sh`               | `0a04be2e83b236e420c7f300fd9aa7e7` |
 | `cnebula.zip`               | `c683cb5dc4ef34ba43de281be67f1a6b` |
 | `coleco.rom`                | `2c66f5911e5b42b8ebe113403548eee7` |
 | `coleco.zip`                | `94915714a814a84f7c292e6db71f3ad2` |
@@ -157,4 +166,5 @@ Used for _Sharp X1_ emulation.
 | `xmil/IPLROM.X1`  | `eeeea1cd29c6e0e8b094790ae969bfa7` |
 | `xmil/IPLROM.X1T` | `851e4a5936f17d13f8c39a980cf00d77` |
 
+[bios.md5]: https://github.com/skyzyx/rg35xx-garlicos-macos-instructions/raw/main/bios.md5
 [Homebrew]: https://mac.install.guide/homebrew/index.html
