@@ -2,23 +2,25 @@
 set -euo pipefail
 
 ##
-# COPY/DOWNLOAD THIS FILE INTO YOUR BIOS DIRECTORY FIRST!
-#
-#   curl --silent --show-error --location --fail \
-#       https://github.com/skyzyx/rg35xx-garlicos-macos-instructions/raw/main/checksum-md5.sh \
-#       --output ./checksum-md5.sh
-#
-#   chmod +x ./checksum-md5.sh
-#
+# YOU. YEAH, YOU.
+# This script is not for you.
+##
+
+##
 # This file will generate checksums of the BIOS files. It requires modern Bash,
 # newer than what Apple ships (because of the GPLv3 license). Requires packages
 # installed from Homebrew.
 #
-# brew install bash coreutils findutils grep
+# RUN THIS FROM YOUR BIOS DIRECTORY!
+#
+#   curl -sSLf https://github.com/skyzyx/rg35xx-garlicos-macos-instructions/raw/main/checksum-md5.sh | /opt/homebrew/bin/bash | pbcopy
 #
 # PRINTS TO STANDARD OUT (stdout)! This means you can pipe the output to
 # `pbcopy` to copy it to your clipboard.
 ##
+
+# Ensure that dependencies are installed.
+brew install bash coreutils findutils grep
 
 # Available in Bash 4+.
 shopt -s globstar

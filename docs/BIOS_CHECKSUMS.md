@@ -45,7 +45,6 @@ These are sorted the way that Bash sorts things — numbers, then UPPER alpha, t
 | `PSXONPSP660.BIN`           | `c53ca5908936d412331790f4426c6c33` |
 | `STBIOS.bin`                | `d3a44ba7d42a74d3ac58cb9c14c6a5ca` |
 | `bios.gg`                   | `672e104c3be3a238301aceffc3b23fd6` |
-| `bios.md5`                  | `8e6590039bcd357d859d7c62a2a5f7f0` |
 | `bios.min`                  | `1e4fb124a3a886865acb574f388c803d` |
 | `bios_CD_E.bin`             | `e66fa1dc5820d254611fdcdba0662372` |
 | `bios_CD_J.bin`             | `278a9397d192149e84e820ac621a8edd` |
@@ -58,7 +57,6 @@ These are sorted the way that Bash sorts things — numbers, then UPPER alpha, t
 | `c52.bin`                   | `f1071cdb0b6b10dde94d3bc8a6146387` |
 | `cchip.zip`                 | `df6f8a3d83c028a5cb9f2f2be60773f3` |
 | `channelf.zip`              | `2f2f8de3827ae1faf2495e497ca95232` |
-| `checksum.sh`               | `0a04be2e83b236e420c7f300fd9aa7e7` |
 | `cnebula.zip`               | `c683cb5dc4ef34ba43de281be67f1a6b` |
 | `coleco.rom`                | `2c66f5911e5b42b8ebe113403548eee7` |
 | `coleco.zip`                | `94915714a814a84f7c292e6db71f3ad2` |
