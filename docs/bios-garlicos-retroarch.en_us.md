@@ -58,7 +58,7 @@ If you followed one of the _Installing Garlic OS on your Anbernic RG35XX using m
 ### Note about save files
 
 <details>
-<summary>TLDR</summary>
+<summary>TLDR</summary><br>
 
 Save files are _emulator-specific_. The (default) emulator that is assigned to a ROM folder will create save files in that emulator’s format (which is why I’m mentioning this here).
 
@@ -71,7 +71,7 @@ This is not bulletproof, however. Different systems may use different versions/c
 ### Special instructions for SNK Neo Geo Systems
 
 <details>
-<summary>TLDR</summary>
+<summary>TLDR</summary><br>
 
 <div><img src="images/neogeo-logo@2x.png" alt="Neo-Geo System" width="300"></div>
 
@@ -82,7 +82,7 @@ This applies to **Neo Geo arcade games**, **Neo Geo console games**, **Neo Geo C
     1. **Copy** (not move) `ROMS/BIOS/neogeo.zip` to `ROMS/Roms/NEOGEO/neogeo.zip`.
 
         <details>
-        <summary>See the Terminal command…</summary>
+        <summary>See the Terminal command…</summary><br>
 
         ```bash
         cp --verbose --force /Volumes/ROMS/BIOS/neogeo.zip /Volumes/ROMS/Roms/NEOGEO/neogeo.zip
@@ -95,7 +95,7 @@ This applies to **Neo Geo arcade games**, **Neo Geo console games**, **Neo Geo C
     1. **Copy** (not move) `ROMS/BIOS/neogeo.zip` to `ROMS/Roms/NEOCD/neogeo.zip`.
 
         <details>
-        <summary>See the Terminal command…</summary>
+        <summary>See the Terminal command…</summary><br>
 
         ```bash
         cp --verbose --force /Volumes/ROMS/BIOS/neogeo.zip /Volumes/ROMS/Roms/NEOCD/neogeo.zip
@@ -118,7 +118,7 @@ Inside the `ROMS/Roms` folder, create a new subfolder called `FBNEO` if it doesn
 > **NOTE:** You can validate MD5 checksums using [Appendix: BIOS Checksums].
 
 <details>
-<summary>Finalburn Neo not doing it for you?</summary>
+<summary>Finalburn Neo not doing it for you?</summary><br>
 
 Garlic OS and RetroArch will try to execute games inside the `FBNEO` folder with the _Finalburn Neo_ arcade emulator. This is _probably OK_, but if you have an arcade game that doesn’t work well with _Finalburn Neo_, there are some alternatives.
 
@@ -226,8 +226,7 @@ If the game system has a flag next to it, it means that the name/device was only
 ¹ 3DO was a set of specifications, with manufacturing licensed to Panasonic, GoldStar, Sanyo, Creative, and Samsung.
 
 <details>
-<summary>Unplayable systems</summary>
-<br>
+<summary>Unplayable systems</summary><br>
 
 These systems are deemed _unplayable_ either because emulation is far too slow on RG35XX, or because the BIOS files are extraordinarily hard to find on the internet.
 
