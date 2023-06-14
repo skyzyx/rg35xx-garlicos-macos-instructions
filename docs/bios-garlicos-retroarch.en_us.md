@@ -63,7 +63,7 @@ If you want to "cross-save" with a different device, you need to ensure you’re
 
 This is not bulletproof, however. Different systems may use different versions/commits of these emulators, which may be incompatible with each other. So make sure you regularly backup your save files.
 
-### Special instructions SNK Neo Geo Systems
+### Special instructions for SNK Neo Geo Systems
 
 <div><img src="images/neogeo-logo@2x.png" alt="Neo-Geo System" width="300"></div>
 
