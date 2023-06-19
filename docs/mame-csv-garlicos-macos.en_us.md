@@ -8,13 +8,19 @@ Most computers will typically open CSV files in a speadsheet program (since a CS
 
 You can also open a CSV in any editor that can read plain text files. (If you don’t have a preferred code editor, I can suggest [VS Code].)
 
+![mame.csv opened in VS Code](images/mame-csv-vscode@2x.png)
+
 ## Getting `mame.csv`
 
 Garlic OS ships with a 1.1 MB copy of `mame.csv`, so MAME (and other arcade) emulation has useful names out-of-the-box.
 
 But we can do better.
 
-A project called `tiny-best-set-go` provides a more complete, 1.9 MB copy of `mame.csv`. Since there is copyrighted content on this page, I don't want to link to it directly. However one `.zip` file that this project provides is called `tiny-best-set-go-arcade-names-garlic.zip`. Inside of this, you will find a `mame.csv` file.
+A project called `tiny-best-set-go` provides a more complete, 1.9 MB copy of `mame.csv`.
+
+![mame.csv preview in Finder](images/mame-csv-finder@2x.png)
+
+Since there is copyrighted content on this page, I don't want to link to it directly. However one `.zip` file that this project provides is called `tiny-best-set-go-arcade-names-garlic.zip`. Inside of this, you will find a `mame.csv` file.
 
 That file is here: [`mame-original.csv`](../mame-original.csv).
 
