@@ -11,7 +11,9 @@ set -euo pipefail
 ##
 
 # Ensure that dependencies are installed.
-brew install bash coreutils gnu-sed
+if [[ $(/usr/bin/uname -o) == "Darwin" ]]; then
+    brew install bash coreutils gnu-sed
+fi
 
 # Identify the files we're working with
 source_file="$(pwd)/mame-original.csv"

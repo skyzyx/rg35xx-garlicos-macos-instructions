@@ -20,7 +20,9 @@ set -euo pipefail
 ##
 
 # Ensure that dependencies are installed.
-brew install bash coreutils findutils gnu-sed
+if [[ $(/usr/bin/uname -o) == "Darwin" ]]; then
+    brew install bash coreutils findutils gnu-sed
+fi
 
 # Available in Bash 4+.
 shopt -s globstar
