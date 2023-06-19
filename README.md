@@ -11,6 +11,7 @@ Default translations are in _U.S. English_.
 * [Installing Garlic OS on your Anbernic RG35XX using macOS (single-card setup)](docs/installing-garlicos-single-card.en_us.md)
 * [Updating Garlic OS on your Anbernic RG35XX using macOS](docs/updating-garlicos.en_us.md)
 * [Finding and adding the correct BIOS files to Garlic OS on the Anbernic RG35XX so that you can play ROMs](docs/bios-garlicos-retroarch.en_us.md)
+* [Cleaning up mame.csv for Garlic OS on your Anbernic RG35XX using macOS](docs/mame-csv-garlicos-macos.en_us.md)
 
 ### Game management
 
@@ -25,7 +26,6 @@ Default translations are in _U.S. English_.
 
 * Installing Garlic OS on your Anbernic RG35XX using macOS (multi-card setup)
 * Configuring Garlic OS and Retroarch on the Anbernic RG35XX for optimal use
-* Configuring new _consoles_ under the Console menu in Garlic OS for the Anbernic RG35XX
 * Creating a custom bootscreen for Garlic OS for the Anbernic RG35XX using macOS
 * Creating/modifying skins (themes) in Garlic OS for the Anbernic RG35XX using macOS
 * Finding/creating custom box art for ROMs in Garlic OS for the Anbernic RG35XX using macOS
