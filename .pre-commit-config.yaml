@@ -1,0 +1,74 @@
+---
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+default_language_version:
+  python: python3.11
+
+default_stages:
+  - commit
+  - push
+
+fail_fast: false
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: b9a2d838763bf5b796022791ffb2d8b5b365b88f
+    hooks:
+      - id: check-added-large-files
+        args:
+          - --maxkb=500
+          - --enforce-all
+      - id: check-case-conflict
+      - id: check-executables-have-shebangs
+      - id: check-json
+      - id: check-merge-conflict
+      - id: check-symlinks
+      - id: check-toml
+      - id: check-xml
+      - id: check-yaml
+        args:
+          - --allow-multiple-documents
+      - id: destroyed-symlinks
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: fix-byte-order-marker
+      - id: fix-encoding-pragma
+        args:
+          - --remove
+      - id: mixed-line-ending
+        args:
+          - --fix=lf
+      # - id: no-commit-to-branch
+      #   args: [--branch, main]
+      - id: requirements-txt-fixer
+      - id: trailing-whitespace
+
+  - repo: https://github.com/asottile/pyupgrade
+    rev: 83350b641a97064541c9a02792986eba4edd4ae2
+    hooks:
+      - id: pyupgrade
+        args:
+          - --py311-plus
+
+  - repo: https://github.com/asottile/reorder_python_imports
+    rev: 790b255edb380fbfec266506ed600f5a1b89671b
+    hooks:
+      - id: reorder-python-imports
+        args:
+          - --py311-plus
+
+  - repo: https://github.com/skyzyx/git-hooks
+    rev: 4a2f0dc93e5c5353ed5e619599b0d15e34df88db
+    hooks:
+      - id: git-check
+      - id: markdownlint
+        args:
+          - --ignore=node_modules
+          - --ignore=.github
+          - --ignore=.templates
+          - --fix
+      - id: script-must-have-extension
+      - id: shellcheck
+      - id: shfmt
+      - id: yamlfmt
+      - id: yapf
