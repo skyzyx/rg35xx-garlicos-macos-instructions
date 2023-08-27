@@ -16,7 +16,7 @@ repos:
     hooks:
       - id: check-added-large-files
         args:
-          - --maxkb=500
+          - --maxkb=2048
           - --enforce-all
       - id: check-case-conflict
       - id: check-executables-have-shebangs

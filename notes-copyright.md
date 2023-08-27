@@ -1,3 +1,5 @@
+# Copyright
+
 First, we need to discuss a couple of topics.
 
 ## Preface

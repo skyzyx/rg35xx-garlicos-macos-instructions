@@ -1,4 +1,4 @@
-## Ports
+# Ports
 
 ![Ports](images/header-ports.png)
 
@@ -7,4 +7,4 @@
 |             |      |               | `prboom.wad`   | `DOOM`          |
 |             |      |               |                | `QUAKE`         |
 
-https://github.com/JoeStaff/devilutionX/releases
+<https://github.com/JoeStaff/devilutionX/releases>
