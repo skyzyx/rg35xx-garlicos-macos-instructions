@@ -1,4 +1,4 @@
-#!/opt/homebrew/bin/bash
+#!/usr/bin/env bash
 set -euo pipefail
 
 ##
@@ -19,17 +19,12 @@ set -euo pipefail
 # `pbcopy` to copy it to your clipboard.
 ##
 
-# Ensure that dependencies are installed.
-if [[ $(/usr/bin/uname -o) == "Darwin" ]]; then
-    brew install bash coreutils findutils gnu-sed
-fi
-
 # Available in Bash 4+.
 shopt -s globstar
 
 # Cleanup .DS_Store files first
 # shellcheck disable=SC2038
-find . -type f -name .DS_Store | xargs -I% rm -f "%"
+gfind . -type f -name .DS_Store | gxargs -I% grm -f "%"
 
 # shellcheck disable=SC2016
 cat << EOF

@@ -1,0 +1,2 @@
+findutils
+coreutils

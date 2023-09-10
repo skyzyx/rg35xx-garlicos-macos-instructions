@@ -2,6 +2,12 @@
 
 By Ryan Parman and contributors.
 
+## Prerequisites
+
+There are a few tutorials where you can either do things by hand, or you can leverage scripts which perform the tasks in an automated way. If you choose to run the scripts by following directions, there are a few things to install on your Mac that will streamline everything.
+
+See [PREREQUISITES.md](PREREQUISITES.md) for details.
+
 ## Guides
 
 Default translations are in _U.S. English_.
