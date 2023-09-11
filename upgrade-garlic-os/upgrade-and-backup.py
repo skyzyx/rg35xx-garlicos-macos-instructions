@@ -7,6 +7,7 @@ from textwrap import dedent
 from helpers.backup import *
 from helpers.flags import *
 from helpers.messages import *
+from helpers.upgrade import *
 
 #-------------------------------------------------------------------------------
 # Bail-out early if we don't meet requirements.
@@ -45,6 +46,7 @@ def main():
     perform_backup(flags)
 
     # Upgrade second.
+    perform_upgrade(flags)
 
 # -----------------------------------------------------------------------------
 

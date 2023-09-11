@@ -12,6 +12,12 @@ def cli_flags():
     )
 
     parser.add_argument(
+        "--upgrade-path",
+        "-u",
+        help="The directory path which contains the upgrade files. Required unless the `--no-upgrade` flag is set.",
+    )
+
+    parser.add_argument(
         "--misc-volume",
         "-M",
         help="The path to the MISC volume. The default value is `/Volumes/MISC`.",
@@ -28,6 +34,12 @@ def cli_flags():
     parser.add_argument(
         "--no-backup",
         help="Backups are performed by default. Set this flag if you definitely DO NOT WANT to backup.",
+        action="store_true",
+    )
+
+    parser.add_argument(
+        "--no-upgrade",
+        help="Upgrades are performed by default. Set this flag if you definitely DO NOT WANT to upgrade.",
         action="store_true",
     )
 

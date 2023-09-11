@@ -18,7 +18,8 @@ def getVolumePaths(volume, exclude_dirs=[], sort_list=False):
 
     for dirpath, dirnames, files in os.walk(volume, topdown=True):
         for d in dirnames:
-            dirnames[:] = [d for d in dirnames if not d.startswith('.')]
+            # @TODO: Need to figure out how to exclude directories starting with `.`, but not `.retroarch`.
+            # dirnames[:] = [d for d in dirnames if not d.startswith('.')]
             dirnames[:] = [d for d in dirnames if d not in exclude_dirs]
 
         for f in files:

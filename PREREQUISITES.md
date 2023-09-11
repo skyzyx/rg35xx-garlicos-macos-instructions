@@ -79,12 +79,13 @@ If you want to learn more, read the section titled â€œUnderstanding BSD vs GNUâ€
 | `grep`      | This is the GNU/Linux version of a tool called `grep`, which is used for reading the contents of things and/or filtering results. On the CLI and inside scripts, it will be called by the name `ggrep`.                                            |
 | `gnu-sed`   | This is the GNU/Linux version of a tool called `sed`, which is used for editing strings of text. On the CLI and inside scripts, it will be called by the name `gsed`.                                                                              |
 | `gnu-tar`   | This is the GNU/Linux version of a tool called `tar`, which is used for bundling files together into an archive. On the CLI and inside scripts, it will be called by the name `gtar`.                                                              |
-| `xz`        | This tool is used for _compressing_ archives, and is commonly used alongside `tar`. It's compression is better than `zip`, `gz`, or `bz2`.                                                                                                         |
+| `p7zip`     | This tool is used for _compressing_/_decompressing_ archives, and is commonly used alongside `tar`. It's compression is better than `zip`, `gz`, or `bz2`, and is equivalent to `xz`.                                                              |
+| `xz`        | This tool is used for _compressing_/_decompressing_ archives, and is commonly used alongside `tar`. It's compression is better than `zip`, `gz`, or `bz2`, and is equivalent to `7z`.                                                              |
 
 After ensuring that Homebrew is set-up, you can install all of these packages with the following terminal command:
 
 ```bash
-brew install bash coreutils findutils grep gnu-sed gnu-tar python@3.11 xz
+brew install bash coreutils findutils grep gnu-sed gnu-tar p7zip python@3.11 xz
 ```
 
 ## Understanding BSD vs GNU

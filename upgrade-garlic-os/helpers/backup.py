@@ -12,7 +12,11 @@ from helpers.fs import *
 from helpers.messages import *
 from helpers.numbers import *
 
-def determinePlan(flags):
+def determine_backup_plan(flags):
+    flags.backup_path = pathlib.Path(flags.backup_path).resolve()
+    flags.misc_volume = pathlib.Path(flags.misc_volume).resolve()
+    flags.roms_volume = pathlib.Path(flags.roms_volume).resolve()
+
     misc_paths = getVolumePaths(
         flags.misc_volume,
         sort_list=True,
@@ -48,10 +52,22 @@ def determinePlan(flags):
 
         print(HR)
 
+    if isPathExist(flags.misc_volume) == False:
+        sys.exit(
+            f"{cerror('[ERROR]')} The MISC volume does not exist at the path `{flags.misc_volume}`."
+        )
+
+    if isPathExist(flags.roms_volume) == False:
+        sys.exit(
+            f"{cerror('[ERROR]')} The ROMS volume does not exist at the path `{flags.roms_volume}`."
+        )
+
     if flags.skip_interactive == False:
         print(
             dedent(
                 f"""\
+{cinfo("BACKUP:")}
+
 WHAT IS GOING TO HAPPEN:
 
     1. We will create a new disk image (sparse bundle), and mount it as a volume. (It may show up on
@@ -75,37 +91,27 @@ WHAT IS GOING TO HAPPEN:
 
         print("")
 
-        confirmed = input('Type YES to continue, or CTRL-C to abort: ')
-        if confirmed != "YES":
+        try:
+            _ = input(PRESS_TO_CONTINUE)
+        except KeyboardInterrupt:
             sys.exit(0)
 
     else:
         if flags.verbose >= 1:
-            pr("NOTE: --skip-interactive is enabled.")
+            pr(crun("NOTE: --skip-interactive is enabled."))
 
 def perform_backup(flags):
     if flags.no_backup == False:
         if flags.backup_path is None:
             sys.exit(
-                f"{cerror('[ERROR]')} You must specify a backup path with the `--backup-path` flag, or no backup at all with the `--no-backup` flag."
+                f"{cerror('[ERROR]')} You must specify a backup path with the `--backup-path` flag, or no backup at all with \nthe `--no-backup` flag."
             )
 
-        flags.backup_path = pathlib.Path(flags.backup_path).resolve()
-        flags.misc_volume = pathlib.Path(flags.misc_volume).resolve()
-        flags.roms_volume = pathlib.Path(flags.roms_volume).resolve()
-
-        determinePlan(flags)
+        determine_backup_plan(flags)
         # ...and wait for an answer.
 
-        if isPathExist(flags.misc_volume) == False:
-            sys.exit(
-                f"{cerror('[ERROR]')} The MISC volume does not exist at the path `{flags.misc_volume}`."
-            )
-
-        if isPathExist(flags.roms_volume) == False:
-            sys.exit(
-                f"{cerror('[ERROR]')} The ROMS volume does not exist at the path `{flags.roms_volume}`."
-            )
+        print(HR)
+        print("")
 
         # Used as a unique identifier for the backup.
         UUID = getTimestamp()
@@ -127,7 +133,7 @@ def perform_backup(flags):
             str(pathlib.Path(f"RG35XX-GarlicOS-{UUID}.sparsebundle").resolve()),
         ]
 
-        if flags.verbose >= 2:
+        if flags.verbose >= 1:
             pr(crun(" ".join(cmd1)))
 
         subprocess.run(cmd1, text=True)
@@ -142,7 +148,7 @@ def perform_backup(flags):
             str(pathlib.Path(f"/Volumes/RG35XX-GarlicOS-Backup-{UUID}").resolve()),
         ]
 
-        if flags.verbose >= 2:
+        if flags.verbose >= 1:
             pr(crun(" ".join(cmd1)))
 
         subprocess.run(cmd1, text=True)
@@ -164,7 +170,7 @@ def perform_backup(flags):
             str(pathlib.Path(f"/Volumes/RG35XX-GarlicOS-Backup-{UUID}").resolve()),
         ]
 
-        if flags.verbose >= 2:
+        if flags.verbose >= 1:
             pr(crun(" ".join(cmd1)))
 
         subprocess.run(cmd1, text=True)
@@ -207,7 +213,7 @@ def perform_backup(flags):
 
         cmd1.extend(end_roms_cmd)
 
-        if flags.verbose >= 2:
+        if flags.verbose >= 1:
             pr(crun(" ".join(cmd1)))
 
         subprocess.run(cmd1, text=True)
@@ -220,7 +226,7 @@ def perform_backup(flags):
             UUID,
         ]
 
-        if flags.verbose >= 2:
+        if flags.verbose >= 1:
             pr(crun(" ".join(cmd1)))
 
         subprocess.run(cmd1, text=True)
@@ -235,7 +241,7 @@ def perform_backup(flags):
             str(pathlib.Path(f"/Volumes/RG35XX-GarlicOS-Backup-{UUID}").resolve()),
         ]
 
-        if flags.verbose >= 2:
+        if flags.verbose >= 1:
             pr(crun(" ".join(cmd1)))
 
         subprocess.run(cmd1, text=True)
@@ -250,7 +256,7 @@ def perform_backup(flags):
             str(pathlib.Path(f"RG35XX-GarlicOS-{UUID}.sparsebundle").resolve()),
         ]
 
-        if flags.verbose >= 2:
+        if flags.verbose >= 1:
             pr(crun(" ".join(cmd1)))
 
         subprocess.run(cmd1, text=True)
@@ -265,7 +271,7 @@ def perform_backup(flags):
             f"RG35XX-GarlicOS-{UUID}.sparsebundle",
         ]
 
-        if flags.verbose >= 2:
+        if flags.verbose >= 1:
             pr(crun(" ".join(cmd1)))
 
         subprocess.run(cmd1, text=True)
