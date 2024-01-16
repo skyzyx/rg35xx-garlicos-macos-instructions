@@ -4,7 +4,8 @@ Instructions for installing Garlic OS on your Anbernic RG35XX using macOS. Adapt
 
 Each step is explained in English with the corresponding terminal command below it. These instructions should work without problem on any modern macOS — with either Intel or Apple Silicon CPUs. Tested on macOS Ventura 13.5 on both an Intel i9 chip, and an Apple M1 Max chip.
 
-> **IMPORTANT:** You will end up formatting the `ROMS` partition completely, so it is best to do this before you waste time copying any rom files over.
+> [!CAUTION]
+> You will end up formatting the `ROMS` partition completely, so it is best to do this before you waste time copying any rom files over.
 
 ## Prerequisites
 
@@ -56,7 +57,8 @@ Each step is explained in English with the corresponding terminal command below 
 
 ## Flashing the microSD card
 
-> **IMPORTANT:** If you have data you care about on the microSD card, back it up before flashing it with Garlic OS.
+> [!CAUTION]
+> If you have data you care about on the microSD card, back it up before flashing it with Garlic OS.
 
 1. Launch _balenaEtcher_.
 
@@ -102,7 +104,8 @@ Each step is explained in English with the corresponding terminal command below 
 
 1. Use `diskutil` (installed by default on macOS) to view the list of mounted drives and look for the microSD card path. I have _several_ external hard drives, and mine was `/dev/disk11` with 4 partitions.
 
-    > **NOTE:** If you paid attention to the _Location_ column in _balenaEtcher_ when you were selecting a disk target, this will be the _same location_.
+    > [!TIP]
+    > If you paid attention to the _Location_ column in _balenaEtcher_ when you were selecting a disk target, this will be the _same location_.
 
     ```bash
     diskutil list
@@ -120,7 +123,8 @@ Each step is explained in English with the corresponding terminal command below 
 
 1. Launch `gdisk` using `sudo`. You will likely need to enter your password to authenticate.
 
-    > **NOTE:** `sudo` grants administrative permissions to your user, as if to say "super user, do this." If you don’t use `sudo` it will launch, but it will fail on some of the later steps.
+    > [!NOTE]
+    > `sudo` grants administrative permissions to your user, as if to say "super user, do this." If you don’t use `sudo` it will launch, but it will fail on some of the later steps.
 
     ```bash
     sudo gdisk
@@ -231,7 +235,8 @@ Each step is explained in English with the corresponding terminal command below 
 
 1. Enter print command again to verify that we have deleted the correct partition.
 
-    > **NOTE:** Remember nothing takes affect until we save and quit, so if there is a mistake, just quit without saving (q) and start again.
+    > [!NOTE]
+    > Remember nothing takes affect until we save and quit, so if there is a mistake, just quit without saving (q) and start again.
 
     ```plain
     p
@@ -308,7 +313,8 @@ Each step is explained in English with the corresponding terminal command below 
 
 1. Enter print command again to verify that we have deleted the correct partition.
 
-    > **NOTE:** Remember nothing takes affect until we save and quit, so if there is a mistake, just quit without saving (q) and start again.
+    > [!NOTE]
+    > Remember nothing takes affect until we save and quit, so if there is a mistake, just quit without saving (q) and start again.
 
     ```plain
     p
@@ -333,7 +339,8 @@ Each step is explained in English with the corresponding terminal command below 
 
 1. Enter _write mode_. This will perform the changes to your disk.
 
-    > **IMPORTANT:** This is your last chance to quit without breaking anything. Choose `q` if you have noticed a mistake during the print step.
+    > [!CAUTION]
+    > This is your last chance to quit without breaking anything. Choose `q` if you have noticed a mistake during the print step.
 
     ```plain
     w
@@ -369,7 +376,8 @@ Each step is explained in English with the corresponding terminal command below 
 
 1. Pop your card out, then put it back in so that Finder mounts your new volumes on the desktop.
 
-    > **NOTE:** The size of the `ROMS` volume will still be incorrect until the next step.
+    > [!NOTE]
+    > The size of the `ROMS` volume will still be incorrect until the next step.
 
 ## Cleaning up and restoring backups
 
