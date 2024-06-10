@@ -71,8 +71,7 @@ Here's the [Amazon.com (US) link](https://www.amazon.com/dp/B00M55C0NS) (not a r
     <details>
     <summary><b>If there was an error…</b></summary><br>
 
-    > [!IMPORTANT]
-    > **If there was an error**, we will need to take additional steps to resolve this. **Take note of the device ID**, which will help us resolve the issue.
+    > **IMPORTANT:** If there was an error, we will need to take additional steps to resolve this. **Take note of the device ID**, which will help us resolve the issue.
 
     ![Screenshot of Device ID](images/format-device-id@2x.png)
 
