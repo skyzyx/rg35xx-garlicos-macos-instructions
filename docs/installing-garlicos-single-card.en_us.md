@@ -68,6 +68,7 @@ Here's the [Amazon.com (US) link](https://www.amazon.com/dp/B00M55C0NS) (not a r
 
     <div><img src="images/format-operation-successful@2x.png" alt="Screenshot of 'Operation successful.'" width="50%"></div>
 
+    <br>
     <details>
     <summary><b>If there was an error…</b></summary><br>
 
