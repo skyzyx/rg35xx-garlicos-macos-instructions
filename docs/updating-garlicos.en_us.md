@@ -10,10 +10,9 @@ Each step is explained in English with the corresponding terminal command below 
 
     <div><img src="images/finder@2x.png" alt="Finder icon" width="55"></div>
 
-* An application which can open `.7z` archives. I can recommend:
+* An application which can open `.7z` archives. I can recommend: [The Unarchiver](https://apps.apple.com/us/app/the-unarchiver/id425424353?mt=12) (free) or [Archiver](https://archiverapp.com) (paid; this is what I use).
 
-    * [The Unarchiver](https://apps.apple.com/us/app/the-unarchiver/id425424353?mt=12) (free)
-    * [Archiver](https://archiverapp.com) (paid)
+    <div><img src="images/7z@2x.png" alt="7zip format icon" width="55"></div>
 
 ## Backing-up the existing OS
 

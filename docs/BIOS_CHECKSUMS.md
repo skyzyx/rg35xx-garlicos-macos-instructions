@@ -1,6 +1,7 @@
 # Appendix: BIOS Checksums
 
-> **IMPORTANT:** These checksums are for the BIOS files only. They do not include the `scummvm` directory (which comes with Garlic OS), nor the `Databases/` and `Machines/` directories that are required for Microsoft MSX emulation.
+> [!IMPORTANT]
+> These checksums are for the BIOS files only. They do not include the `scummvm` directory (which comes with Garlic OS), nor the `Databases/` and `Machines/` directories that are required for Microsoft MSX emulation.
 
 Most of the BIOS files used for emulation go into this root `BIOS/` directory.
 

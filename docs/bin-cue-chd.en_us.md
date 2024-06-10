@@ -10,14 +10,17 @@ Each step is explained in English with the corresponding terminal command below 
 
     <div><img src="images/finder@2x.png" alt="Finder icon" width="55"></div>
 
+* You know how to find/launch apps on your Mac. [Spotlight] is a great built-in tool for this (⌘-space). Third-party software like [Alfred], [Raycast], or [Launchbar] are also good tools for this.
+
+    <div><img src="images/spotlight@2x.png" alt="Spotlight icon" width="55"></div>
+
 * Comfortable-enough using _Terminal.app_ (or alternatives).
 
     <div><img src="images/terminal@2x.png" alt="Terminal icon" width="55"></div>
 
-* An application which can open `.7z` archives. I can recommend:
+* An application which can open `.7z` archives. I can recommend: [The Unarchiver](https://apps.apple.com/us/app/the-unarchiver/id425424353?mt=12) (free) or [Archiver](https://archiverapp.com) (paid; this is what I use).
 
-    * [The Unarchiver](https://apps.apple.com/us/app/the-unarchiver/id425424353?mt=12) (free)
-    * [Archiver](https://archiverapp.com) (paid)
+    <div><img src="images/7z@2x.png" alt="7zip format icon" width="55"></div>
 
 * You have [Homebrew](https://brew.sh) installed. ([Installation](https://mac.install.guide/homebrew/index.html) is outside the scope of this tutorial, but it’s pretty fundamental if you do technical things on your Mac.)
 
@@ -39,7 +42,8 @@ Each step is explained in English with the corresponding terminal command below 
 
 ## Downloading and preparing to run a shell script, for the _nearly-absolute beginner_
 
-> **NOTE:** If you are comfortable with Git, GitHub, and Terminal — you just need to `git clone` (or download) the repository, then run the `./convert.sh` shell script passing the **directory** where the `.bin`/`.cue` files live as the argument. The rest of these instructions are for everyone else.
+> [!NOTE]
+> If you are comfortable with Git, GitHub, and Terminal — you just need to `git clone` (or download) the repository, then run the `./convert.sh` shell script passing the **directory** where the `.bin`/`.cue` files live as the argument. The rest of these instructions are for everyone else.
 
 1. [Download a .zip file containing the source code](https://github.com/skyzyx/bin-cue-chd/archive/refs/heads/main.zip) from the [`skyzyx/bin-cue-chd`](https://github.com/skyzyx/bin-cue-chd) GitHub repository. By default, it will save to your `Downloads` folder.
 
@@ -48,6 +52,8 @@ Each step is explained in English with the corresponding terminal command below 
     ![Screenshot of what Terminal should look like](images/downloads@2x.png)
 
 1. Using Spotlight (by default, command-spacebar — `⌘[space]`), search for _Terminal_. When there is a matching result, press enter/return.
+
+    <div><img src="images/spotlight@2x.png" alt="Terminal icon" width="55"><img src="images/terminal@2x.png" alt="Terminal icon" width="55"></div>
 
 1. In Terminal, type `cd` followed by the spacebar.
 
@@ -65,7 +71,8 @@ Each step is explained in English with the corresponding terminal command below 
 
 You’re stiil in the Terminal app, and still inside the `bin-cue-chd-main` folder. Right?
 
-> **NOTE:** To check, type `pwd` and press enter/return. You should see a path that ends with `bin-cue-chd-main`.
+> [!NOTE]
+> To check, type `pwd` and press enter/return. You should see a path that ends with `bin-cue-chd-main`.
 
 1. Type the following (beginning with a _period-slash_), followed by a space.
 
@@ -124,3 +131,8 @@ You’re stiil in the Terminal app, and still inside the `bin-cue-chd-main` fold
 1. When you’re ready, you can copy it to the location where you keep/play your other legal ROMs.
 
     ![Screenshot of what Finder should look like](images/copy-to-emulator@2x.png)
+
+[Alfred]: https://www.alfredapp.com
+[Launchbar]: https://www.obdev.at/products/launchbar/
+[Raycast]: https://www.raycast.com
+[Spotlight]: https://support.apple.com/guide/mac-help/search-with-spotlight-mchlp1008/mac

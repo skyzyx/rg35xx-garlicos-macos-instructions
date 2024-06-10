@@ -16,10 +16,9 @@ Each step is explained in English with the corresponding terminal command below 
 
     <div><img src="images/terminal@2x.png" alt="Terminal icon" width="55"></div>
 
-* An application which can open `.7z` archives. I can recommend:
+* An application which can open `.7z` archives. I can recommend: [The Unarchiver](https://apps.apple.com/us/app/the-unarchiver/id425424353?mt=12) (free) or [Archiver](https://archiverapp.com) (paid; this is what I use).
 
-    * [The Unarchiver](https://apps.apple.com/us/app/the-unarchiver/id425424353?mt=12) (free)
-    * [Archiver](https://archiverapp.com) (paid)
+    <div><img src="images/7z@2x.png" alt="7zip format icon" width="55"></div>
 
 * You have [Homebrew](https://brew.sh) installed. ([Installation](https://mac.install.guide/homebrew/index.html) is outside the scope of this tutorial, but it’s pretty fundamental if you do technical things on your Mac.)
 
@@ -95,4 +94,5 @@ Each step is explained in English with the corresponding terminal command below 
 
 ![Photo of game on an RG35XX](images/multi-disc-rg35xx.jpg)
 
-> **NOTE:** If someone knows how to take a screenshot in Garlic OS (and not RetroArch), please open an issue to let me know. Thanks!
+> [!NOTE]
+> If someone knows how to take a screenshot in Garlic OS (and not RetroArch), please open an issue to let me know. Thanks!

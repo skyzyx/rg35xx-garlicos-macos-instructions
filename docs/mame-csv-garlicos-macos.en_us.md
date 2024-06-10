@@ -38,7 +38,8 @@ If you want to _learn how_ to perform the clean-up, read the source code for [`c
 
 Whenever there is a new update to an original `mame.csv` file, this script can be re-run over the updated file, and the same cleanup rules will be applied.
 
-> **NOTE:** If there's something I missed, or you think that I lost the _meaning_ in my changes, please [open an issue](https://github.com/skyzyx/rg35xx-garlicos-macos-instructions/issues/new) describing the issue, and I'll take a look at it.
+> [!NOTE]
+> If there's something I missed, or you think that I lost the _meaning_ in my changes, please [open an issue](https://github.com/skyzyx/rg35xx-garlicos-macos-instructions/issues/new) describing the issue, and I'll take a look at it.
 
 ## Updating `mame.csv` on your Garlic OS SD card
 

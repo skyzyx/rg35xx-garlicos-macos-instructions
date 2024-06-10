@@ -115,7 +115,8 @@ While you can certainly do some fiddling if you are a true _arcade aficionado_, 
 
 Inside the `ROMS/Roms` folder, create a new subfolder called `FBNEO` if it doesn’t already exist. This is where you will put all of the Arcade ROMs.
 
-> **NOTE:** You can validate MD5 checksums using [Appendix: BIOS Checksums].
+> [!NOTE]
+> You can validate MD5 checksums using [Appendix: BIOS Checksums].
 
 <details>
 <summary>Finalburn Neo not doing it for you?</summary><br>
@@ -167,7 +168,8 @@ Source: <https://docs.libretro.com/library/fbneo/>
 
 If the game system has a flag next to it, it means that the name/device was only sold in that market.
 
-> **NOTE:** You can validate MD5 checksums using [Appendix: BIOS Checksums].
+> [!NOTE]
+> You can validate MD5 checksums using [Appendix: BIOS Checksums].
 
 | Game system                                             | Year | Core/Emulator                     | BIOS filenames                                                                                                                                                                                                                                                                                              | ROM folder name       |
 |---------------------------------------------------------|------|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------|
@@ -240,7 +242,8 @@ These systems are deemed _unplayable_ either because emulation is far too slow o
 
 ![Handheld Systems](images/header-handheld.png)
 
-> **NOTE:** You can validate MD5 checksums using [Appendix: BIOS Checksums].
+> [!NOTE]
+> You can validate MD5 checksums using [Appendix: BIOS Checksums].
 
 | Game system                            | Year | Core/Emulator       | BIOS filenames | ROM folder name |
 |----------------------------------------|------|---------------------|----------------|-----------------|
@@ -268,7 +271,8 @@ These systems are deemed _unplayable_ either because emulation is far too slow o
 
 If the game system has a flag next to it, it means that the name/device was only sold in that market.
 
-> **NOTE:** You can validate MD5 checksums using [Appendix: BIOS Checksums].
+> [!NOTE]
+> You can validate MD5 checksums using [Appendix: BIOS Checksums].
 
 | Game system                               | Year | Core/Emulator     | BIOS filenames                                    | ROM folder name |
 |-------------------------------------------|------|-------------------|---------------------------------------------------|-----------------|
