@@ -35,8 +35,7 @@ Searching the web for this error message text turned up some useful results. Thi
 
 1. Take the _Device ID_ that we found when we ran into the error, and look for it in this output. Mine was `disk5s1` (yours may be different, so change the value as appropriate), so I'm going to look for `/dev/disk5` in this list.
 
-    > [!TIP]
-    > Each _device_ can have zero or more _volumes_. In `disk5s1`, `disk5` is the _device_, and `s1` is the name of the _volume_.
+    > **TIP:** Each _device_ can have zero or more _volumes_. In `disk5s1`, `disk5` is the _device_, and `s1` is the name of the _volume_.
 
     ```text
     /dev/disk5 (internal, physical):
@@ -80,8 +79,7 @@ Searching the web for this error message text turned up some useful results. Thi
     sudo /bin/dd if=/dev/zero of=/dev/disk5 bs=1024 count=1024
     ```
 
-    > [!TIP]
-    > See <https://ss64.com/mac/dd.html> if you want to learn more about this command and these options.
+    > **TIP:** See <https://ss64.com/mac/dd.html> if you want to learn more about this command and these options.
 
     Output should look something like this:
 
