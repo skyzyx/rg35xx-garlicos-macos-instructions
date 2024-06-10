@@ -2,16 +2,20 @@
 
 Instructions for installing Garlic OS on your Anbernic RG35XX using macOS. Adapted and expanded from <https://pastebin.com/YV1Va5JL>, originally written by _A GUEST_ on 2022-12-30. (I wish there were a better way to cite your work — I’m sorry!)
 
-Each step is explained in English with the corresponding terminal command below it. These instructions should work without problem on any modern macOS — with either Intel or Apple Silicon CPUs. Tested on macOS Ventura 13.5 on both an Intel i9 chip, and an Apple M1 Max chip.
+Each step is explained in English with the corresponding terminal command below it. These instructions should work without problem on any modern macOS — with either Intel or Apple Silicon CPUs. Tested on macOS Sonoma 14.5 on both an Intel i9 chip, and an Apple M1 Max chip.
 
 > [!CAUTION]
-> You will end up formatting the `ROMS` partition completely, so it is best to do this before you waste time copying any rom files over.
+> You will end up formatting the `ROMS` partition completely, so it is best to do this before you waste time copying any ROM files over.
 
 ## Prerequisites
 
-* A _relatively_ [recent version of macOS](https://gist.github.com/skyzyx/225b59847be31b39d3d19c3a1c006862).
+* A _relatively_ [recent version of macOS](https://gist.github.com/skyzyx/225b59847be31b39d3d19c3a1c006862). Apple generally provides support for the 3 most recent macOS releases, and we get new releases every Sept/Oct.
 
     <div><img src="images/finder@2x.png" alt="Finder icon" width="55"></div>
+
+* You know how to find/launch apps on your Mac. [Spotlight] is a great built-in tool for this (⌘-space). Third-party software like [Alfred], [Raycast], or [Launchbar] are also good tools for this.
+
+    <div><img src="images/spotlight@2x.png" alt="Spotlight icon" width="55"></div>
 
 * Download [balenaEtcher](https://www.balena.io/etcher). The free version is totally fine.
 
@@ -21,14 +25,66 @@ Each step is explained in English with the corresponding terminal command below 
 
     <div><img src="images/terminal@2x.png" alt="Terminal icon" width="55"></div>
 
-* An application which can open `.7z` archives. I can recommend:
+* An application which can open `.7z` archives. I can recommend: [The Unarchiver](https://apps.apple.com/us/app/the-unarchiver/id425424353?mt=12) (free) or [Archiver](https://archiverapp.com) (paid; this is what I use).
 
-    * [The Unarchiver](https://apps.apple.com/us/app/the-unarchiver/id425424353?mt=12) (free)
-    * [Archiver](https://archiverapp.com) (paid)
+    <div><img src="images/7z@2x.png" alt="7zip format icon" width="55"></div>
 
 * You have [Homebrew](https://brew.sh) installed. ([Installation](https://mac.install.guide/homebrew/index.html) is outside the scope of this tutorial, but it’s pretty fundamental if you do technical things on your Mac.)
 
     * This includes installing the [Xcode CLI tools](https://mac.install.guide/homebrew/2.html) (a much smaller download than the _entire_ Xcode).
+
+## Prepare your SD card
+
+I'm starting with a **32 GB SanDisk Ultra MicroSD card, formatted as NTFS**. Nothing fancy, but from a reliable brand. Any kind of MicroSD card should be fine, provided that you feel confident in its reliability.
+
+<div><img src="images/sandisk-ultra@2x.jpg" alt="Photo of a SanDisk Ultra MicroSD card" width="50%"></div>
+
+Here's the [Amazon.com (US) link](https://www.amazon.com/dp/B00M55C0NS) (not a referral link). If you want to learn more about which symbols mean which things, [this Wired article](https://www.wired.com/story/sd-card-speeds-explained/) provides a decent explanation.
+
+> [!CAUTION]
+> If you ordered a card from Anbernic, it is _probably not_ very reliable. Many people have reported reliability issues with these cards, resulting in data loss. So, heads-up.
+
+1. On your Mac, open _Disk Utility_.
+
+    <div><img src="images/disk-utility@2x.png" alt="Disk Utility icon" width="55"></div>
+
+1. On the left (1) _UntitledNTFS_ is the name of my _volume_ (the same as the one that shows up in _Finder_). We want to select its **parent**, which lets us manage the entire SD card. Once we have that selected, we choose _Erase_ from the tool bar (2).
+
+    ![Screenshot of selecting the drive and choosing Erase in Disk Utility](images/format-erase@2x.png)
+
+1. After choosing _Erase_, we will be presented with a dialog box. This box contains a few options, and we want to **change** them.
+
+    | Field      | Selection                                                                                                                              |
+    |------------|----------------------------------------------------------------------------------------------------------------------------------------|
+    | **Name**   | _Untitled_ is fine. We'll be changing this soon anyway.                                                                                |
+    | **Format** | Choose _MS-DOS (FAT)_. <br><div><img src="images/choice-format@2x.png" alt="Screenshot choosing MS-DOS (FAT)" width="50%"></div>       |
+    | **Scheme** | Choose _Master Boot Record_. <br><div><img src="images/choice-scheme@2x.png" alt="Screenshot choosing MS-DOS (FAT)" width="50%"></div> |
+
+    You should end up with this. If all is well, click the _Erase_ button to begin.
+
+    <div><img src="images/correct-choices@2x.png" alt="Screenshot choosing MS-DOS (FAT)" width="50%"></div>
+
+1. _Disk Utility_ will begin reformatting the MicroSD card. When it is done, it should say _Operation successful_. If so, click the _Done_ button.
+
+    <div><img src="images/format-operation-successful@2x.png" alt="Screenshot of 'Operation successful.'" width="50%"></div>
+
+    <details>
+    <summary><b>If there was an error…</b></summary><br>
+
+    > [!IMPORTANT]
+    > **If there was an error**, we will need to take additional steps to resolve this. **Take note of the device ID**, which will help us resolve the issue.
+
+    ![Screenshot of Device ID](images/format-device-id@2x.png)
+
+    These are the error messages we know about:
+
+    * [MediaKit reports not enough space on device for requested operation](media-kit-reports-not-enough-space-on-device-for-requested-operation.md)
+
+    </details>
+
+1. **Verify** that the volume is formatted as _MS-DOS (FAT32)_.
+
+    ![Screenshot of selecting the drive and choosing Erase in Disk Utility](images/format-verify@2x.png)
 
 ## Downloading Garlic OS
 
@@ -42,8 +98,6 @@ Each step is explained in English with the corresponding terminal command below 
     * `RG35XX-MicroSDCardImage.7z.002`
 
 1. Decompress the `.7z` files.
-
-    1. macOS can open `.7z` files natively.
 
     1. Select _both_ files.
 
@@ -398,3 +452,8 @@ You have installed Garlic OS to your Anbernic RG35XX!
 Put the microSD card back into the top slot, and power-on the device.
 
 For more fun, check out [custom themes/skins](https://www.rg35xx.com/temas-garlicos/), as well as [creating a custom boot screen](https://www.reddit.com/r/RG35XX/comments/1177ibw/what_am_i_missing_for_creating_custom_boot_logos/)!
+
+[Alfred]: https://www.alfredapp.com
+[Launchbar]: https://www.obdev.at/products/launchbar/
+[Raycast]: https://www.raycast.com
+[Spotlight]: https://support.apple.com/guide/mac-help/search-with-spotlight-mchlp1008/mac
